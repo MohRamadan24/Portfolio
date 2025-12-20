@@ -1,0 +1,11 @@
+/* Keep App.css minimal; most styling is Tailwind + component styles */
+
+.App {
+  min-height: 100vh;
+}
+
+/* Optional: slightly nicer focus outlines on custom buttons */
+:focus-visible {
+  outline: 2px solid rgba(185, 140, 255, 0.55);
+  outline-offset: 3px;
+}
