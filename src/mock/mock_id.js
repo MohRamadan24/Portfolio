@@ -1,24 +1,25 @@
-// Frontend-only mock data (no backend yet)
-// Replace with real API calls later.
+// Frontend-only mock data (Bahasa Indonesia)
+
+import { Instagram } from "lucide-react";
 
 export const profile = {
   name: "Moh. Ramadan",
   headline: "QA Analyst",
-  location: "Remote / Worldwide",
-  photoUrl:
-    "/images/fotoBebasRamaKotak280x280.png",
+  location: "Remote / Seluruh Dunia",
+  photoUrl: "/images/fotoBebasRamaKotak280x280.png",
   summary:
-    "I am a QA Analyst with over three years of experience in ensuring software quality. I possess strong verbal and written communication skills and am adept at explaining complex software issues in a clear and understandable manner. Through effective testing strategies, I significantly minimized bug leakage into production, achieving a reduction of up to 95%. I am detail-oriented, collaborative, and committed to delivering high-quality software products.",
+    "Saya adalah QA Analyst dengan pengalaman lebih dari tiga tahun dalam memastikan kualitas perangkat lunak. Saya memiliki kemampuan komunikasi verbal dan tulisan yang baik serta mahir menjelaskan masalah perangkat lunak yang kompleks dengan jelas dan mudah dimengerti. Melalui strategi pengujian yang efektif, saya berhasil meminimalkan bug hingga 95%. Saya detail, kolaboratif, dan berkomitmen untuk menghasilkan produk perangkat lunak berkualitas tinggi.",
   quickStats: [
-    { label: "Experience", value: "4+ years" },
-    { label: "Bug leakage reduction", value: "Up to 95%" },
-    { label: "Platforms", value: "Web • Android • iOS" },
+    { label: "Pengalaman", value: "4+ tahun" },
+    { label: "Pengurangan bug", value: "Hingga 95%" },
+    { label: "Platform", value: "Web • Android • iOS" },
   ],
   contact: {
     email: "moh.ramadan8h@gmail.com",
     fiverr: "https://www.fiverr.com/ramadan56",
     linkedin: "https://www.linkedin.com/in/moh-ramadan-a26453264/",
     github: "https://github.com/MohRamadan24",
+    instagram: "https://www.instagram.com/moh.ramadan_/",
   },
 };
 
@@ -26,34 +27,34 @@ export const services = [
   {
     title: "QA & UAT (Web & Mobile)",
     description:
-      "Scenario-based testing, exploratory testing, regression, smoke, and UAT with reproducible steps.",
+      "Pengujian berbasis skenario, exploratory testing, regresi, smoke testing, dan UAT dengan langkah-langkah yang dapat direproduksi.",
     highlights: [
-      "Test plan & checklist",
-      "Clear bug reports",
-      "Cross-device coverage",
-      "Release sign-off support",
+      "Rencana & checklist pengujian",
+      "Laporan bug yang jelas",
+      "Cakupan lintas perangkat",
+      "Dukungan tanda tangan rilis",
     ],
   },
   {
     title: "UI & UX Design",
     description:
-      "User-centered interface and experience design focused on clarity, usability, and visual consistency across platforms.",
+      "Desain antarmuka dan pengalaman pengguna yang berfokus pada kejelasan, kemudahan penggunaan, dan konsistensi visual di berbagai platform.",
     highlights: [
-      "User flow & wireframes",
-      "High-fidelity UI design",
-      "Design system & components",
-      "Usability & UX review",
+      "Alur pengguna & wireframe",
+      "Desain UI high-fidelity",
+      "Sistem desain & komponen",
+      "Review kegunaan & UX",
     ],
   },
   {
     title: "Landing Page & CMS",
     description:
-      "Conversion-focused landing pages and CMS-based websites that are fast, responsive, and easy to manage.",
+      "Landing page dan situs CMS yang berfokus pada konversi, cepat, responsif, dan mudah dikelola.",
     highlights: [
-      "Modern landing page design",
-      "Responsive",
-      "CMS setup (WordPress / Processwire)",
-      "Easy content management",
+      "Desain landing page modern",
+      "Responsif",
+      "Setup CMS (WordPress / Processwire)",
+      "Mudah mengelola konten",
     ],
   },
 ];
@@ -101,10 +102,10 @@ export const certifications = [
     credential: "https://cert.efset.org/id/2EGvH4",
   },
   {
-    title: "Lembaga Sertifikasi Profesi (LSP) - Rekayasa Perangkat Lunak",
+    title: "Lembaga Sertifikasi Profesi (LSP) - RPL (88 Points)",
     issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
     year: "2022",
-    credential: "https://cert.efset.org/id/2EGvH4",
+    credential: "https://drive.google.com/file/d/1LOp9lABezSVNaY5fAA06zTIAd0YjCGpI/view?usp=sharing",
   },
   {
     title: "MongoDB and the Document Model",
@@ -116,11 +117,11 @@ export const certifications = [
 
 const baseReview = {
   countryCode: "SA",
-  country : "Saudi Arabia",
+  country: "Arab Saudi",
   stars: 5,
-  timeAgo: "1 month ago",
+  timeAgo: "1 bulan lalu",
   body:
-    "Working with this Moh Ramadan was an excellent experience! He completed a thorough review of our hotel booking app on both Android and iOS, providing detailed feedback on UI and UX. Their observations were clear, constructive, and professional—highlighting what works well and pinpointing exactly where improvements could enhance the user experience. Highly recommended for anyone looking for reliable, insightful app testing! Already started to work on another gig, All the very best.",
+    "Bekerja dengan Moh Ramadan adalah pengalaman yang sangat baik! Ia menyelesaikan review mendetail pada aplikasi hotel kami di Android dan iOS, memberikan masukan yang jelas dan profesional. Observasinya sangat konstruktif dan menyoroti area yang perlu ditingkatkan. Sangat direkomendasikan bagi siapa saja yang mencari penguji aplikasi yang handal dan berpengalaman. Saya sudah mulai bekerja di gig lainnya. Semoga sukses selalu.",
 };
 
 export const reviews = [
@@ -272,31 +273,20 @@ export const reviews = [
 export const portfolioItems = [
   {
     id: "p1",
-    title: "Property Agency Site",
-    subtitle: "Company Profile & CMS",
+    title: "Situs Agen Properti",
+    subtitle: "Profil Perusahaan & CMS",
     href: "https://stayco.trinitymerge.my.id/",
-    thumbnail:
-      "/images/screenshotPortfolio1.png",
-    tags: ["Company Profile", "Multi-page", "CMS"],
+    thumbnail: "/images/screenshotPortfolio1.png",
+    tags: ["Profil Perusahaan", "Multi-halaman", "CMS"],
   },
   {
     id: "p2",
-    title: "Portfolio Site",
-    subtitle: "Static Landing Page",
-    href: "youtube.com",
-    thumbnail:
-      "/images/screenshotPortfolio3.png",
-    tags: ["Landing Page", "Single-page", "Responsive"],
+    title: "Situs Portofolio",
+    subtitle: "Landing Page Statis",
+    href: "https://mohramadan.trinitymerge.my.id/",
+    thumbnail: "/images/screenshotPortfolio3.png",
+    tags: ["Landing Page", "Satu halaman", "Responsif"],
   },
-  // {
-  //   id: "p4",
-  //   title: "Landing Page QA (Preview)",
-  //   subtitle: "Cross-browser & responsiveness",
-  //   href: "https://example.com",
-  //   thumbnail:
-  //     "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1200'%20height='720'%3E%3Crect%20width='1200'%20height='720'%20fill='%230d0f14'/%3E%3Crect%20x='90'%20y='110'%20width='1020'%20height='500'%20rx='26'%20fill='rgba(255,255,255,0.07)'%20stroke='rgba(160,112,255,0.25)'/%3E%3Ctext%20x='130'%20y='200'%20fill='rgba(255,255,255,0.9)'%20font-size='34'%20font-family='Inter, Arial'%3EPreview%20Screenshot%3C/text%3E%3Ctext%20x='130'%20y='250'%20fill='rgba(255,255,255,0.55)'%20font-size='18'%20font-family='Inter, Arial'%3EMobile%20shows%201-per-row%3C/text%3E%3C/svg%3E",
-  //   tags: ["Responsive", "Cross-browser", "Checklist"],
-  // },
 ];
 
 export const experience = [
@@ -307,13 +297,13 @@ export const experience = [
     period: "Oct 2021 - November 2021",
     duration: "1 month",
     opening:
-      "I gained freelance experience as a software tester for a software company, specializing in:",
+      "Saya mendapatkan pengalaman freelance sebagai penguji perangkat lunak untuk sebuah perusahaan software, dengan spesialisasi:",
     bullets: [
-      "Identifying software bugs.",
-      "Reporting bugs with detailed documentation.",
+      "Mengidentifikasi bug perangkat lunak.",
+      "Melaporkan bug dengan dokumentasi yang detail.",
     ],
     ending:
-      "This role allowed me to develop a deep understanding of software development intricacies and enhance my skills.",
+      "Peran ini memungkinkan saya memahami seluk-beluk pengembangan perangkat lunak secara mendalam dan meningkatkan keterampilan saya.",
     stack: ["Google Docs", "Google Drive", "Google Slides"],
     skills: ["Software Testing", "Bug Tracking"],
     location: "Aliyan Business Centre, Jl. Hasanuddin No.66, Plipir, Sekardangan, Kec. Sidoarjo, Jawa Timur 61215 - Remote"
@@ -325,14 +315,14 @@ export const experience = [
     period: "Apr 2021 — Dec 2021",
     duration: "9 months",
     opening:
-      "As a participant in my high school's internship program, I served as an Administration Assistant at National Assurance Company, where I:",
+      "Sebagai peserta program magang di sekolah menengah, saya bertugas sebagai Asisten Administrasi di perusahaan nasional, di mana saya:",
     bullets: [
-      "Handled various administrative tasks (Ms Word, Ms Excel, Canva).",
-      "Engaged in customer interactions and socialization across different platforms.",
-      "Developed skills in managing customer complaints and addressing inquiries.",
+      "Menangani berbagai tugas administrasi (Ms Word, Ms Excel, Canva).",
+      "Berinteraksi dengan pelanggan dan melakukan sosialisasi melalui berbagai platform.",
+      "Mengembangkan keterampilan dalam menangani keluhan pelanggan dan menjawab pertanyaan mereka.",
     ],
     ending:
-      "This experience provided me with valuable knowledge and insights into company operations, preparing me for future professional endeavors.",
+      "Pengalaman ini memberikan wawasan dan pengetahuan berharga tentang operasi perusahaan, serta mempersiapkan saya untuk karir profesional di masa depan.",
     stack: ["Google Sheet", "Canva", "Ms Excel", "Ms Word", "Google Contact"],
     skills: ["Problem Solving", "Data Entry", "Data Visualization", "Customer Service", "File Management", "Critical Thinking", "Administrative Assistance"],
     location: "Jl. Doktor Sutomo No.1, Klojen, Malang, Jawa Timur - Onsite"
@@ -344,16 +334,15 @@ export const experience = [
     period: "Sep 2021 — Dec 2022",
     duration: "1 year 4 months",
     opening:
-      "During my high school years, I had the privilege of working at Littlemisshamper as a tailor and product designer, where I gained skills in:",
+      "Selama masa SMA, saya berkesempatan bekerja di Littlemisshamper sebagai penjahit dan desainer produk, di mana saya memperoleh keterampilan dalam:",
     bullets: [
-      "Creating custom products tailored to client's unique needs and preferences.",
-      "Design and produce a variety of bags, including hampers, laptop bags, gift bags, and wallets, ensuring both style and functionality.",
-      "Execute precise tailoring and craftsmanship to meet high-quality standards for each product.",
-      "Apply creative hands-on techniques to craft distinctive items, combining aesthetics and practicality."
+      "Membuat produk custom sesuai kebutuhan dan preferensi unik klien.",
+      "Merancang dan memproduksi berbagai jenis tas, termasuk hampers, laptop bag, gift bag, dan dompet, dengan memperhatikan gaya dan fungsionalitas.",
+      "Melaksanakan penjahitan yang presisi dan kerajinan tangan untuk memenuhi standar kualitas tinggi setiap produk.",
+      "Menerapkan teknik kreatif secara langsung untuk menghasilkan produk yang unik, menggabungkan estetika dan praktikabilitas.",
     ],
     ending:
-      "This role allowed me to explore my creativity and develop valuable professional skills.",
-    // stack: ["Chrome DevTools", "Trello"],
+      "Peran ini memungkinkan saya mengeksplorasi kreativitas dan mengembangkan keterampilan profesional yang berharga.",
     skills: ["Team Management", "Creative Pattern Cutting", "Cutting Cloth", "Design Thinking", "Critical Thinking", "Project Management", "Product Design", "Tailoring"],
     location: "Perumahan bukit dieng R 10 Malang Jawa Timur - Onsite"
   },
@@ -364,15 +353,15 @@ export const experience = [
     period: "Dec 2023 — Jan 2024",
     duration: "1 month",
     opening:
-      "I undertook a freelance role as a software developer to create a survey website for college students, focusing on assessing mental health. Over two weeks, I:",
+      "Saya mengambil peran freelance sebagai pengembang perangkat lunak untuk membuat situs survei bagi mahasiswa, dengan fokus pada penilaian kesehatan mental. Selama dua minggu, saya:",
     bullets: [
-      "Conducted a thorough analysis of the website’s features to understand requirements and user needs.",
-      "Designed the system architecture and database to ensure scalability and efficient data management.",
-      "Developed and implemented core functionalities, integrating front-end and back-end components.",
-      "Completed final testing, refinement, and successfully launched the fully functional website."
+      "Melakukan analisis menyeluruh terhadap fitur situs untuk memahami kebutuhan pengguna dan persyaratan.",
+      "Merancang arsitektur sistem dan basis data untuk memastikan skalabilitas dan manajemen data yang efisien.",
+      "Mengembangkan dan mengimplementasikan fungsi inti, mengintegrasikan komponen front-end dan back-end.",
+      "Menyelesaikan pengujian akhir, penyempurnaan, dan berhasil meluncurkan situs web yang sepenuhnya berfungsi.",
     ],
     ending:
-      "This project allowed me to support mental health initiatives for college students through a practical web solution.",
+      "Proyek ini memungkinkan saya mendukung inisiatif kesehatan mental bagi mahasiswa melalui solusi web yang praktis.",
     stack: ["PHP", "MySQL", "CSS", "Apache"],
     skills: ["Front-End Development", "Software System Analysis", "Back-End Web Development"],
     location: "Jl. Ambarawa No.5, Sumbersari, Kec. Lowokwaru, Kota Malang, Jawa Timur 65145 - Remote"
@@ -384,15 +373,15 @@ export const experience = [
     period: "Feb 2024 — Oct 2024",
     duration: "9 month",
     opening:
-      "As a Purchaser for the F&B business my friends and I started, I handle buying ingredients and supplies, including :",
+      "Sebagai Purchaser untuk bisnis F&B yang saya dan teman-teman mulai, saya menangani pembelian bahan baku dan perlengkapan, termasuk:",
     bullets: [
-      "Managing supplier relationships.",
-      "Monitoring stock levels.",
-      "Making timely purchases.",
-      "Ensuring we have everything needed to produce high-quality snacks."
+      "Mengelola hubungan dengan pemasok.",
+      "Memantau tingkat stok.",
+      "Melakukan pembelian tepat waktu.",
+      "Memastikan semua kebutuhan untuk produksi snack berkualitas tinggi terpenuhi.",
     ],
     ending:
-      "This role lets me use my organizational and negotiation skills to help our business succeed",
+      "Peran ini memungkinkan saya memanfaatkan keterampilan organisasi dan negosiasi untuk membantu kesuksesan bisnis kami.",
     skills: ["Market Research", "Market Analysis"],
     location: "Sidoarjo, East Java, Indonesia - Hybrid"
   },
@@ -403,14 +392,14 @@ export const experience = [
     period: "Feb 2024 — Oct 2024",
     duration: "9 month",
     opening:
-      "As a Sales Representative, I manage our F&B business's school partnerships, including:",
+      "Sebagai Sales Representative, saya mengelola kemitraan sekolah untuk bisnis F&B kami, termasuk:",
     bullets: [
-      "Presenting our snacks to schools for consignment.",
-      "Expanding our reach using sales and negotiation skills.",
-      "Building strong relationships with school administrators and canteen managers.",
+      "Mempresentasikan produk snack kami kepada sekolah untuk sistem konsinyasi.",
+      "Memperluas jangkauan menggunakan keterampilan penjualan dan negosiasi.",
+      "Membangun hubungan yang kuat dengan administrator sekolah dan pengelola kantin.",
     ],
     ending:
-      "This role helps to expand our business and strengthen our presence in school canteens.",
+      "Peran ini membantu memperluas bisnis kami dan memperkuat kehadiran di kantin sekolah.",
     skills: ["Sales and Negotiation", "Market Research", "Analytical Skills"],
     location: "Sidoarjo, East Java, Indonesia - Hybrid"
   },
@@ -421,15 +410,15 @@ export const experience = [
     period: "May 2022 — Jun 2025",
     duration: "3 Years 2 month",
     opening:
-      "In my role as a Quality Assurance Analyst, I ensure the reliability and quality of software products before they reach the end user, including:",
+      "Dalam peran saya sebagai Quality Assurance Analyst, saya memastikan keandalan dan kualitas produk perangkat lunak sebelum sampai ke pengguna akhir, termasuk:",
     bullets: [
-      "Carefully validating features to meet client expectations.",
-      "Reducing the risk of critical bugs.",
-      "Conducting thorough testing to deliver a dependable product (Trello, Notion.",
-      "Providing detailed bug reports to facilitate effective resolution (Spreadsheet, Google Docs)."
+      "Memvalidasi fitur dengan teliti agar sesuai ekspektasi klien.",
+      "Mengurangi risiko bug kritis.",
+      "Melakukan pengujian menyeluruh untuk menghasilkan produk yang dapat diandalkan (Trello, Notion).",
+      "Menyediakan laporan bug yang detail untuk memudahkan penyelesaian masalah (Spreadsheet, Google Docs).",
     ],
     ending:
-      "This contributes to enhancing user experience and satisfaction.",
+      "Hal ini berkontribusi pada peningkatan pengalaman dan kepuasan pengguna.",
     stack: ["Postman", "Trello", "GitMind", "Google Sheets"],
     skills: ["System Analysis", "MySQL", "Problem Solving", "Technical Documentation", "Test Planning", "MongoDB", "Software Testing", "Quality Management", "PHP", "Critical Thinking", "Software System Analysis", "JavaScript", "PhpMyAdmin", "Unified Modeling Language (UML)", "REST APIs", "Requirements Analysis", "Node.js", "Analytical Skills"],
     location: "Aliyan Business Centre, Jl. Hasanuddin No.66, Plipir, Sekardangan, Kec. Sidoarjo, Jawa Timur 61215 - Onsite"
@@ -441,16 +430,16 @@ export const experience = [
     period: "Jun 2023 — Jun 2025",
     duration: "2 Years 1 month",
     opening:
-      "In my second role as an Operations Team Member, I support my team leader in meeting the company's needs, including:",
+      "Dalam peran kedua saya sebagai anggota tim operasional, saya mendukung pemimpin tim untuk memenuhi kebutuhan perusahaan, termasuk:",
     bullets: [
-      "Creating proposals (Google Docs).",
-      "Managing client interactions and engagement.",
-      "Developing marketing materials (Figma, Canva).",
-      "Organizing and preparing for meetings (GMeet, Google Calendar).",
-      "Assisting with data entry and content management for customer websites.",
+      "Membuat proposal (Google Docs).",
+      "Mengelola interaksi dan keterlibatan klien.",
+      "Mengembangkan materi pemasaran (Figma, Canva).",
+      "Mengatur dan mempersiapkan rapat (GMeet, Google Calendar).",
+      "Membantu entri data dan manajemen konten untuk situs pelanggan.",
     ],
     ending:
-      "Balancing these responsibilities with my initial role demonstrates my ability to handle multiple tasks and contribute to our team’s success.",
+      "Menyeimbangkan tanggung jawab ini dengan peran awal saya menunjukkan kemampuan saya menangani banyak tugas dan berkontribusi pada keberhasilan tim.",
     stack: ["Figma", "Canva", "Google Docs", "Google Meet"],
     skills: ["Problem Solving", "Proposal Writing", "Figma", "Requirement Analysis", "Canva", "Public Speaking"],
     location: "Aliyan Business Centre, Jl. Hasanuddin No.66, Plipir, Sekardangan, Kec. Sidoarjo, Jawa Timur 61215 - Onsite"
@@ -462,16 +451,16 @@ export const experience = [
     period: "Jul 2024 — Jun 2025",
     duration: "1 Year",
     opening:
-      "In my third role as a Generalist, I provide flexible support across different teams to ensure smooth operations and contribute to the company's success, including :",
+      "Dalam peran ketiga saya sebagai Generalist, saya memberikan dukungan fleksibel di berbagai tim untuk memastikan operasi berjalan lancar dan berkontribusi pada kesuksesan perusahaan, termasuk:",
     bullets: [
-      "Assisting any team that requires help, particularly when developing software and handling customer needs.",
-      "Train marketing team to ensure they understand the product thoroughly.",
-      "Preparing and delivering product and system presentations to clients, explaining workflows, features, and technical approaches clearly.",
-      "Create use interfaces / Frontend designs as a support member for teams that need help upon request.",
-      "Research and development about application feasibility, feature coverage, and technology that can be used for development application.",
+      "Membantu tim yang membutuhkan, terutama saat mengembangkan perangkat lunak dan menangani kebutuhan pelanggan.",
+      "Melatih tim pemasaran agar memahami produk secara menyeluruh.",
+      "Mempersiapkan dan menyampaikan presentasi produk dan sistem kepada klien, menjelaskan alur kerja, fitur, dan pendekatan teknis dengan jelas.",
+      "Membuat antarmuka / desain Frontend sebagai dukungan bagi tim yang membutuhkan bantuan atas permintaan.",
+      "Melakukan riset dan pengembangan mengenai kelayakan aplikasi, cakupan fitur, dan teknologi yang dapat digunakan untuk pengembangan aplikasi.",
     ],
     ending:
-      "This flexibility demonstrates my ability to adapt and contribute effectively to multiple areas within the company.",
+      "Fleksibilitas ini menunjukkan kemampuan saya untuk beradaptasi dan berkontribusi secara efektif di berbagai area dalam perusahaan.",
     stack: ["Bootstrap", "Canva", "Google Docs", "VS Code"],
     skills: ["Tailwind CSS", "Problem Solving", "Presentation Skills", "Software Tutorial - Document", "Research and Development (R&D)", "Software Trainer", "HMVC Framework"],
     location: "Aliyan Business Centre, Jl. Hasanuddin No.66, Plipir, Sekardangan, Kec. Sidoarjo, Jawa Timur 61215 - Onsite"
@@ -483,15 +472,15 @@ export const experience = [
     period: "May 2025 — Jul 2025",
     duration: "3 months",
     opening:
-      "As a Content Analyst, I work closely with video content and advertising material to help identify key moments and optimize content for audience engagement, including :",
+      "Sebagai Content Analyst, saya bekerja erat dengan konten video dan materi iklan untuk mengidentifikasi momen penting dan mengoptimalkan konten agar menarik bagi audiens, termasuk:",
     bullets: [
-      "Selecting 15–25 timestamps for ad materials, each 1–2 minutes, based on content strength and viewer appeal.",
-      "Reviewing and editing 2-minute ad scripts to ensure grammar accuracy and natural, clear use of the Indonesian language.",
-      "Ensuring ad content includes strong hooks that capture attention quickly and maintain interest.",
-      "Providing insight on which content segments are most suitable for marketing and promotional use.",
+      "Memilih 15–25 timestamp untuk materi iklan, masing-masing 1–2 menit, berdasarkan kekuatan konten dan daya tarik penonton.",
+      "Meninjau dan mengedit naskah iklan berdurasi 2 menit untuk memastikan akurasi tata bahasa dan penggunaan bahasa Indonesia yang jelas dan alami.",
+      "Memastikan konten iklan memiliki hook yang kuat agar cepat menarik perhatian dan mempertahankan minat penonton.",
+      "Memberikan insight mengenai segmen konten yang paling cocok untuk penggunaan marketing dan promosi.",
     ],
     ending:
-      "This role demonstrates my ability to identify impactful content and ensure language quality that aligns with the brand and audience.",
+      "Peran ini menunjukkan kemampuan saya dalam mengidentifikasi konten yang berdampak dan memastikan kualitas bahasa yang sesuai dengan merek dan audiens.",
     stack: ["Slack", "Google Sheets", "Google Docs", "Google Drive"],
     skills: ["Analytical Skills", "Script Editing", "Content Review"],
     location: "Mumbai, India - Remote"
@@ -503,17 +492,17 @@ export const experience = [
     period: "May 2025 — Jul 2025",
     duration: "3 months",
     opening:
-      "In my role as a QA Specialist, I ensure the quality and reliability of mobile applications, specifically on the Android platform, including :",
+      "Dalam peran saya sebagai QA Specialist, saya memastikan kualitas dan keandalan aplikasi mobile, khususnya di platform Android, termasuk:",
     bullets: [
-      "Performing detailed testing on Android apps to identify bugs and usability issues.",
-      "Testing the entire payment process, including successful transactions, failure handling, and refund scenarios.",
-      "Evaluating and documenting areas of the system that need improvement or do not meet internal standards.",
-      "Ensuring each feature meets visual, functional, and user experience expectations.",
-      "Providing clear feedback and suggestions to help improve the system's overall performance and consistency.",
-      "Collaborating with developers to verify bug fixes and confirm smooth operation of the app.",
+      "Melakukan pengujian detail pada aplikasi Android untuk mengidentifikasi bug dan masalah kegunaan.",
+      "Menguji seluruh proses pembayaran, termasuk transaksi sukses, penanganan gagal, dan skenario refund.",
+      "Mengevaluasi dan mendokumentasikan area sistem yang perlu perbaikan atau tidak memenuhi standar internal.",
+      "Memastikan setiap fitur memenuhi ekspektasi visual, fungsional, dan pengalaman pengguna.",
+      "Memberikan masukan dan saran yang jelas untuk meningkatkan performa dan konsistensi sistem secara keseluruhan.",
+      "Bekerja sama dengan developer untuk memverifikasi perbaikan bug dan memastikan aplikasi berjalan lancar.",
     ],
     ending:
-      "This role highlights my attention to detail, ability to think from the user's perspective, and commitment to maintaining high product quality.",
+      "Peran ini menyoroti perhatian saya terhadap detail, kemampuan berpikir dari perspektif pengguna, dan komitmen dalam menjaga kualitas produk yang tinggi.",
     stack: ["Slack", "Google Sheets", "Google Docs", "Google Drive"],
     skills: ["Bug Triage", "Test Planning", "Test Cases"],
     location: "Mumbai, India - Remote"
@@ -525,33 +514,34 @@ export const experience = [
     period: "Oct 2025 — Dec 2025",
     duration: "3 months",
     opening:
-      "In my role as a QA Specialist, I ensure the quality and reliability of a hotel booking application across mobile platforms and admin systems, including:",
+      "Dalam peran saya sebagai QA Specialist, saya memastikan kualitas dan keandalan aplikasi booking hotel di platform mobile maupun sistem admin, termasuk:",
     bullets: [
-      "Performing comprehensive testing on mobile and admin features to identify functional, usability, and edge-case issues.",
-      "Validating end-to-end booking flows, including reservation creation, status updates, and cancellations.",
-      "Testing payment and wallet processes, covering successful transactions, failure handling, and refund scenarios.",
-      "Verifying transaction accuracy and data consistency between user-facing applications and admin systems.",
-      "Ensuring each feature meets business requirements, functional specifications, and user experience standards.",
+      "Melakukan pengujian menyeluruh pada fitur mobile dan admin untuk mengidentifikasi masalah fungsional, kegunaan, dan edge-case.",
+      "Memvalidasi alur booking end-to-end, termasuk pembuatan reservasi, update status, dan pembatalan.",
+      "Menguji proses pembayaran dan dompet digital, mencakup transaksi sukses, penanganan gagal, dan skenario refund.",
+      "Memverifikasi akurasi transaksi dan konsistensi data antara aplikasi pengguna dan sistem admin.",
+      "Memastikan setiap fitur memenuhi persyaratan bisnis, spesifikasi fungsional, dan standar pengalaman pengguna.",
     ],
     ending:
-      "This experience highlights my attention to detail, understanding of business workflows, and commitment to ensuring a seamless and reliable booking experience for both users and administrators.",
+      "Pengalaman ini menyoroti perhatian saya terhadap detail, pemahaman alur bisnis, dan komitmen untuk memastikan pengalaman booking yang lancar dan dapat diandalkan bagi pengguna maupun administrator.",
     stack: ["Microsoft Teams", "Google Sheets", "Chrome DevTools", "Google Drive"],
     skills: ["Testing Process", "Text Planning", "Bug Triage", "Test-Driven Development", "Test Cases"],
     location: "Saudi Arabia - Remote"
   },
 ];
 
+
 export const faqs = [
   {
-    q: "What do you need from me to start?",
-    a: "Access to the build/environment, user flows, acceptance criteria, and any known risks. If you don’t have a test plan yet, I can propose one.",
+    q: "Apa yang Anda butuhkan dari saya untuk memulai?",
+    a: "Akses ke build/lingkungan, alur pengguna, kriteria penerimaan, dan risiko yang diketahui. Jika belum ada test plan, saya bisa membuatkan.",
   },
   {
-    q: "How do you report bugs?",
-    a: "Clear steps to reproduce, expected vs actual results, severity/priority suggestion, and supporting evidence (screenshots/video) when possible.",
+    q: "Bagaimana cara Anda melaporkan bug?",
+    a: "Langkah jelas untuk reproduksi bug, hasil yang diharapkan vs aktual, saran severity/priority, dan bukti pendukung (screenshot/video).",
   },
   {
-    q: "Can you test Android + iOS?",
-    a: "Yes—coverage depends on your target devices. For this preview, it’s shown as capability; later you can list your real device matrix.",
+    q: "Apakah bisa menguji Android + iOS?",
+    a: "Ya—cakupan tergantung perangkat target. Untuk preview ini, ditampilkan sebagai kemampuan; nanti bisa ditambahkan matriks perangkat nyata.",
   },
 ];

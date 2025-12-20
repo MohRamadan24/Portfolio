@@ -1,18 +1,7 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState, createContext, useRef } from "react";
 import { FlagIcon } from "react-flag-kit";
 
-
-
-import {
-  profile,
-  services,
-  toolbox,
-  reviews,
-  portfolioItems,
-  experience,
-  certifications,
-  faqs,
-} from "@/mock";
+import { useLanguage } from "@/context/LanguageContext"
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -44,9 +33,68 @@ import {
   Sparkles,
   Star,
   Repeat,
-  Users
+  Users,
+  ChevronDown
 } from "lucide-react";
 import { max } from "date-fns";
+
+function LanguageDropdown() {
+  const { data, lang, setLang } = useLanguage()
+  const [open, setOpen] = useState(false);
+
+  const dropdownRef = useRef(null);
+
+  // Close dropdown jika klik di luar
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const options = [
+    { code: "EN", label: "EN" },
+    { code: "ID", label: "ID" },
+    { code: "JP", label: "JP" },
+  ];
+
+  return (
+    <div className="relative w-24"
+    ref={dropdownRef}>
+      <div
+        className="flex items-center justify-between rounded-full border border-white/12 bg-white/5 px-3 py-2 text-sm text-white/80 cursor-pointer"
+        onClick={() => setOpen(!open)}
+      >
+        <div className="flex items-center gap-2">
+          <FlagIcon code={lang === "EN" ? "GB" : lang} size={20} />
+          <span>{lang}</span>
+        </div>
+        <ChevronDown className="h-4 w-4 text-white/80" /> 
+      </div>
+
+      {open && (
+        <ul className="absolute top-full mt-1 w-full rounded-lg border border-white/12 bg-black/50 text-white/80 backdrop-blur z-10">
+          {options.map((o) => (
+            <li
+              key={o.code}
+              onClick={() => { setLang(o.code); setOpen(false); }}
+              className="cursor-pointer px-3 py-1 flex items-center gap-2"
+            >
+              <FlagIcon code={o.code === "EN" ? "GB" : o.code} size={20} />
+              {o.label}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+    
+    
+  );
+}
 
 function cn(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -93,6 +141,10 @@ function SectionHeading({ eyebrow, title, description, right }) {
 }
 
 function Header() {
+
+  const { data, lang, setLang } = useLanguage()
+  const { profile } = data
+
   const nav = [
     { id: "profile", label: "Profile" },
     { id: "services", label: "Services" },
@@ -129,12 +181,27 @@ function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <button
+          {/* <button
             onClick={() => scrollToId("contact")}
             className="hidden rounded-full border border-white/10 bg-white/5 px-3 py-2 text-sm text-white/80 transition-colors hover:bg-white/10 md:inline-flex"
           >
             Contact
-          </button>
+          </button> */}
+          <LanguageDropdown />
+          {/* Language switcher */}
+              {/* <div className="flex items-center gap-2 rounded-full border border-white/12 bg-white/5 px-3 py-2 text-sm text-white/80">
+                <FlagIcon code="ID" size={20} />
+                <select
+                  value={lang}
+                  onChange={(e) => setLang(e.target.value)}
+                  className="text-sm text-white/80 bg-transparent focus:outline-none appearance-none"
+                >
+                  <option value="EN">EN</option>
+                  <option value="ID">ID</option>
+                  <option value="JP">JP</option>
+                </select>
+                <ChevronDown className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-white/80 h-4 w-4" />
+              </div> */}
           <Button
             className="rounded-full bg-[#b98cff] text-[#0b0d12] hover:bg-[#c8a5ff]"
             onClick={() => scrollToId("portfolio")}
@@ -240,7 +307,7 @@ function ReviewCard({ review }) {
           {topTags.map((t) => (
             <Badge
               key={t}
-              className="border border-white/10 bg-white/5 text-white/70"
+              className="border border-white/10 bg-white/5 text-white/70 hover:bg-white/100 hover:text-black"
             >
               {t}
             </Badge>
@@ -309,7 +376,7 @@ function ReviewCard({ review }) {
                       {(review.tags || []).map((t) => (
                         <Badge
                           key={t}
-                          className="border border-white/10 bg-white/5 text-white/75"
+                          className="border border-white/10 bg-white/5 text-white/75 hover:bg-white/100 hover:text-black"
                         >
                           {t}
                         </Badge>
@@ -327,6 +394,21 @@ function ReviewCard({ review }) {
 }
 
 export default function QAPortfolio() {
+
+  // const { data } = useLanguage()
+  const { data, lang, setLang } = useLanguage()
+
+
+  const {
+    profile,
+    services,
+    toolbox,
+    reviews,
+    portfolioItems,
+    experience,
+    certifications,
+    faqs,
+  } = data
 
   const [status, setStatus] = useState("idle");
   // idle | sending | success | error
@@ -512,7 +594,7 @@ export default function QAPortfolio() {
                       (t) => (
                         <Badge
                           key={t}
-                          className="border border-white/10 bg-white/5 text-white/75"
+                          className="border border-white/10 bg-white/5 text-white/75 hover:bg-white/100 hover:text-black"
                         >
                           {t}
                         </Badge>
@@ -537,7 +619,6 @@ export default function QAPortfolio() {
               <div className="flex flex-wrap gap-2">
                 <GlassPill className="border-[#b98cff]/25 bg-[#b98cff]/10 text-white/80">
                   <Users className="h-3.5 w-3.5 text-white/60" />
-                  
                   Clear Communication
                 </GlassPill>
                 <GlassPill>
@@ -563,7 +644,7 @@ export default function QAPortfolio() {
                     {s.highlights.map((h) => (
                       <Badge
                         key={h}
-                        className="border border-white/10 bg-white/5 text-white/70"
+                        className="border border-white/10 bg-white/5 text-white/70 hover:bg-white/100 hover:text-black"
                       >
                         {h}
                       </Badge>
@@ -594,7 +675,7 @@ export default function QAPortfolio() {
                 {toolbox.primary.map((t) => (
                   <Badge
                     key={t}
-                    className="border border-white/10 bg-white/5 text-white/75"
+                    className="border border-white/10 bg-white/5 text-white/75 hover:bg-white/100 hover:text-black"
                   >
                     {t}
                   </Badge>
@@ -609,7 +690,7 @@ export default function QAPortfolio() {
                 {toolbox.testing.map((t) => (
                   <Badge
                     key={t}
-                    className="border border-white/10 bg-white/5 text-white/75"
+                    className="border border-white/10 bg-white/5 text-white/75 hover:bg-white/100 hover:text-black"
                   >
                     {t}
                   </Badge>
@@ -624,7 +705,7 @@ export default function QAPortfolio() {
                 {toolbox.deliverables.map((t) => (
                   <Badge
                     key={t}
-                    className="border border-white/10 bg-white/5 text-white/75"
+                    className="border border-white/10 bg-white/5 text-white/75 hover:bg-white/100 hover:text-black"
                   >
                     {t}
                   </Badge>
@@ -699,7 +780,7 @@ export default function QAPortfolio() {
                           {p.tags.map((t) => (
                             <Badge
                               key={t}
-                              className="border border-white/10 bg-white/5 text-white/75"
+                              className="border border-white/10 bg-white/5 text-white/75 hover:bg-white/100 hover:text-black"
                             >
                               {t}
                             </Badge>
@@ -749,7 +830,7 @@ export default function QAPortfolio() {
                           {e.stack.slice(0, 4).map((t) => (
                             <Badge
                               key={t}
-                              className="border border-white/10 bg-white/5 text-white/70 hover:bg-white/70 hover:text-black"
+                              className="border border-white/10 bg-white/5 text-white/70 hover:bg-white/100 hover:text-black"
                             >
                               {t}
                             </Badge>
@@ -778,7 +859,7 @@ export default function QAPortfolio() {
                           {e.skills.map((t) => (
                             <Badge
                               key={t}
-                              className="border border-white/10 bg-white/5 text-white/70 hover:bg-white/70 hover:text-black"
+                              className="border border-white/10 bg-white/5 text-white/70 hover:bg-white/100 hover:text-black"
                             >
                               {t}
                             </Badge>
@@ -827,11 +908,11 @@ export default function QAPortfolio() {
                     </a> */}
                     <a
                       className="inline-flex items-center justify-center rounded-full border border-white/12 bg-white/5 px-4 py-2 text-sm text-white/80 transition-colors hover:bg-white/10"
-                      href={profile.contact.linkedin}
+                      href={c.credential}
                       target="_blank"
                       rel="noreferrer"
                     >
-                      LinkedIn <ExternalLink className="ml-2 h-4 w-4" />
+                      Show credential <ExternalLink className="ml-2 h-4 w-4" />
                     </a>
                   </div>
                 </CardHeader>
@@ -843,10 +924,10 @@ export default function QAPortfolio() {
           </div>
         </section>
 
-        <Separator className="my-12 bg-white/10" />
+        {/* <Separator className="my-12 bg-white/10" /> */}
 
         {/* FAQ */}
-        <section className="space-y-6" aria-label="FAQ">
+        {/* <section className="space-y-6" aria-label="FAQ">
           <SectionHeading
             eyebrow="FAQ"
             title="Common questions"
@@ -873,7 +954,7 @@ export default function QAPortfolio() {
               </Accordion>
             </CardContent>
           </Card>
-        </section>
+        </section> */}
 
         <Separator className="my-12 bg-white/10" />
 
@@ -887,11 +968,11 @@ export default function QAPortfolio() {
               <div className="flex flex-wrap gap-2">
                 <a
                   className="inline-flex items-center justify-center rounded-full border border-white/12 bg-white/5 px-4 py-2 text-sm text-white/80 transition-colors hover:bg-white/10"
-                  href={profile.contact.linkedin}
+                  href={profile.contact.instagram}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  LinkedIn <ExternalLink className="ml-2 h-4 w-4" />
+                  Instagram <ExternalLink className="ml-2 h-4 w-4" />
                 </a>
                 <a
                   className="inline-flex items-center justify-center rounded-full border border-white/12 bg-white/5 px-4 py-2 text-sm text-white/80 transition-colors hover:bg-white/10"
@@ -1043,6 +1124,7 @@ export default function QAPortfolio() {
               >
                 LinkedIn
               </a>
+
               <button
                 onClick={() => scrollToId("top")}
                 className="rounded-full border border-white/12 bg-white/5 px-4 py-2 text-sm text-white/80 transition-colors hover:bg-white/10"
