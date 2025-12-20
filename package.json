@@ -1,4 +1,5 @@
 {
+  "homepage": "https://mohramadan24.github.io/portfolio",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -58,6 +59,8 @@
   },
   "scripts": {
     "start": "craco start",
+    "predeploy": "craco build",
+    "deploy": "gh-pages -d build",
     "build": "craco build",
     "test": "craco test"
   },
