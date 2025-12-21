@@ -34,7 +34,8 @@ import {
   Star,
   Repeat,
   Users,
-  ChevronDown
+  ChevronDown,
+  Download
 } from "lucide-react";
 import { max } from "date-fns";
 
@@ -408,7 +409,21 @@ export default function QAPortfolio() {
     experience,
     certifications,
     faqs,
+    resume
   } = data
+
+  const handleDownload = () => {
+    // Path ke file di folder public
+    const fileUrl = `/files/${lang}/CV_Moh_Ramadan_Quality_Assurance_Analyst.pdf`;
+
+    // Membuat elemen <a> sementara untuk trigger download
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = "CV_Moh_Ramadan_Quality_Assurance_Analyst.pdf"; // nama file saat di-download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   const [status, setStatus] = useState("idle");
   // idle | sending | success | error
@@ -545,10 +560,10 @@ export default function QAPortfolio() {
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
               <Button
                 className="rounded-full bg-[#b98cff] text-[#07080c] hover:bg-[#c8a5ff]"
-                onClick={() => scrollToId("contact")}
+                onClick={handleDownload}
               >
-                <Mail className="mr-2 h-4 w-4" />
-                Get in touch
+                <Download className="mr-2 h-4 w-4" />
+                {resume.title}
               </Button>
 
               <button

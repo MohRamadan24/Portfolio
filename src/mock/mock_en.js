@@ -3,6 +3,10 @@
 
 import { Instagram } from "lucide-react";
 
+export const resume = {
+  title: "Download CV",
+}
+
 export const profile = {
   name: "Moh. Ramadan",
   headline: "QA Analyst",
