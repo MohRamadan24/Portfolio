@@ -300,7 +300,7 @@ export const portfolioItems = [
     href: "https://mohramadan.trinitymerge.my.id/",
     thumbnail:
       "/images/screenshotPortfolio3.png",
-    tags: ["Landing Page", "Github Pages", "Responsive"],
+    tags: ["Landing Page", "Github Pages", "React JS"],
   },
 ];
 
