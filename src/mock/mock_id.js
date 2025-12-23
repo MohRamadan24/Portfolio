@@ -282,7 +282,7 @@ export const portfolioItems = [
     href: "https://stayco.trinitymerge.my.id/",
     thumbnail:
       "/images/screenshotPortfolio1.png",
-    tags: ["Company Profile", "Multi-page", "CMS"],
+    tags: ["Company Profile", "Google Cloud VM", "Processwire"],
   },
   {
     id: "p2",
@@ -291,7 +291,7 @@ export const portfolioItems = [
     href: "https://mohramadan-wordpress.infinityfree.me/wordpress",
     thumbnail:
       "/images/screenshotPortfolio2.png",
-    tags: ["Bussiness Profile", "Wordpress", "Elementor"],
+    tags: ["Bussiness Profile", "CPanel", "Wordpress"],
   },
   {
     id: "p3",
@@ -300,7 +300,7 @@ export const portfolioItems = [
     href: "https://mohramadan.trinitymerge.my.id/",
     thumbnail:
       "/images/screenshotPortfolio3.png",
-    tags: ["Landing Page", "Single-page", "Responsive"],
+    tags: ["Landing Page", "Github Pages", "Responsive"],
   },
 ];
 

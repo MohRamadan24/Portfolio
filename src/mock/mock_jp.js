@@ -287,7 +287,7 @@ export const portfolioItems = [
     href: "https://stayco.trinitymerge.my.id/",
     thumbnail:
       "/images/screenshotPortfolio1.png",
-    tags: ["Company Profile", "Multi-page", "CMS"],
+    tags: ["Company Profile", "Google Cloud VM", "Processwire"],
   },
   {
     id: "p2",
@@ -296,7 +296,7 @@ export const portfolioItems = [
     href: "https://mohramadan-wordpress.infinityfree.me/wordpress",
     thumbnail:
       "/images/screenshotPortfolio2.png",
-    tags: ["Bussiness Profile", "Wordpress", "Elementor"],
+    tags: ["Bussiness Profile", "CPanel", "Wordpress"],
   },
   {
     id: "p3",
@@ -305,17 +305,8 @@ export const portfolioItems = [
     href: "https://mohramadan.trinitymerge.my.id/",
     thumbnail:
       "/images/screenshotPortfolio3.png",
-    tags: ["Landing Page", "Single-page", "Responsive"],
+    tags: ["Landing Page", "Github Pages", "Responsive"],
   },
-  // {
-  //   id: "p4",
-  //   title: "Landing Page QA (Preview)",
-  //   subtitle: "Cross-browser & responsiveness",
-  //   href: "https://example.com",
-  //   thumbnail:
-  //     "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1200'%20height='720'%3E%3Crect%20width='1200'%20height='720'%20fill='%230d0f14'/%3E%3Crect%20x='90'%20y='110'%20width='1020'%20height='500'%20rx='26'%20fill='rgba(255,255,255,0.07)'%20stroke='rgba(160,112,255,0.25)'/%3E%3Ctext%20x='130'%20y='200'%20fill='rgba(255,255,255,0.9)'%20font-size='34'%20font-family='Inter, Arial'%3EPreview%20Screenshot%3C/text%3E%3Ctext%20x='130'%20y='250'%20fill='rgba(255,255,255,0.55)'%20font-size='18'%20font-family='Inter, Arial'%3EMobile%20shows%201-per-row%3C/text%3E%3C/svg%3E",
-  //   tags: ["Responsive", "Cross-browser", "Checklist"],
-  // },
 ];
 
 export const experience = [
