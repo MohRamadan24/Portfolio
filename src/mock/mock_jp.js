@@ -291,6 +291,15 @@ export const portfolioItems = [
   },
   {
     id: "p2",
+    title: "Cafe Landing Page",
+    subtitle: "Business Profile & CMS",
+    href: "https://mohramadan-wordpress.infinityfree.me/wordpress",
+    thumbnail:
+      "/images/screenshotPortfolio2.png",
+    tags: ["Bussiness Profile", "Wordpress", "Elementor"],
+  },
+  {
+    id: "p3",
     title: "Portfolio Site",
     subtitle: "Static Landing Page",
     href: "https://mohramadan.trinitymerge.my.id/",

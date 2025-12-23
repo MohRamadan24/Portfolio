@@ -277,19 +277,30 @@ export const reviews = [
 export const portfolioItems = [
   {
     id: "p1",
-    title: "Situs Agen Properti",
-    subtitle: "Profil Perusahaan & CMS",
+    title: "Property Agency Site",
+    subtitle: "Company Profile & CMS",
     href: "https://stayco.trinitymerge.my.id/",
-    thumbnail: "/images/screenshotPortfolio1.png",
-    tags: ["Profil Perusahaan", "Multi-halaman", "CMS"],
+    thumbnail:
+      "/images/screenshotPortfolio1.png",
+    tags: ["Company Profile", "Multi-page", "CMS"],
   },
   {
     id: "p2",
-    title: "Situs Portofolio",
-    subtitle: "Landing Page Statis",
+    title: "Cafe Landing Page",
+    subtitle: "Business Profile & CMS",
+    href: "https://mohramadan-wordpress.infinityfree.me/wordpress",
+    thumbnail:
+      "/images/screenshotPortfolio2.png",
+    tags: ["Bussiness Profile", "Wordpress", "Elementor"],
+  },
+  {
+    id: "p3",
+    title: "Portfolio Site",
+    subtitle: "Static Landing Page",
     href: "https://mohramadan.trinitymerge.my.id/",
-    thumbnail: "/images/screenshotPortfolio3.png",
-    tags: ["Landing Page", "Satu halaman", "Responsif"],
+    thumbnail:
+      "/images/screenshotPortfolio3.png",
+    tags: ["Landing Page", "Single-page", "Responsive"],
   },
 ];
 
