@@ -302,6 +302,15 @@ export const portfolioItems = [
       "/images/screenshotPortfolio3.png",
     tags: ["Landing Page", "Github Pages", "React JS"],
   },
+  {
+    id: "p4",
+    title: "Furniture E-Commerce Site",
+    subtitle: "E-Commerce Site & Auth",
+    href: "https://mohramadan-woocommerce.infinityfree.me/",
+    thumbnail:
+      "/images/screenshotPortfolio4.png",
+    tags: ["E-Commerce", "CPanel", "WooCommerce"],
+  },
 ];
 
 export const experience = [
