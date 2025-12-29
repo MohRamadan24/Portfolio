@@ -2,6 +2,7 @@
 // Replace with real API calls later.
 
 import { Instagram } from "lucide-react";
+import { number } from "zod";
 
 export const resume = {
   title: "Download CV",
@@ -64,6 +65,52 @@ export const services = [
     ],
   },
 ];
+
+export const approaches = [
+  {
+    number: "01",
+    title: "Understanding the Problem Comes Before Testing",
+    description:
+      "Before writing test cases, I focus on understanding the real problem theproduct is solving — from business goals to user pain points. Testing without context often leads to false confidence.",
+  },
+  {
+    number: "02",
+    title: "Thinking in Real User Scenarios",
+    description:
+      "I test features the way real users interact with them — including edge cases and unexpected behavior — not just through ideal step-by-step flows.",
+  },
+  {
+    number: "03",
+    title: "Prioritizing Risk Over Coverage Numbers",
+    description:
+      "I test features the way real users interact with them — including edge cases and unexpected behavior — not just through ideal step-by-step flows.",
+  },
+  {
+    number: "04",
+    title: "Bugs Are Information, Not Blame",
+    description:
+      "I treat bugs as signals that help teams improve systems. Clear, objective reporting supports faster fixes, better collaboration, and healthier team dynamics.",
+  },
+  {
+    number: "05", 
+    title: "Automation Is for Protection, Not Impression",
+    description:
+      "Automation is a safety net, not a showcase. I automate repetitive and high-risk areas to prevent regressions, while keeping tests maintainable and meaningful. ",
+  },
+  {
+    number: "06",
+    title: "Quality Is a Shared Responsibility",
+    description:
+      "I collaborate closely with developers and product teams from early discussions to release decisions, aligning expectations and reducing costly rework.",
+  },
+
+  
+];
+export const approaches_extra = {
+  coreQuestionTitle: "Core Question",
+  coreQuestionHeading: "What Could Go Wrong?",
+  coreQuestionDescription: "This question guides my thinking at every stage — requirements, design, implementation, testing, and release. It helps anticipate failures early and protects users before issues reach production.",
+};
 
 export const toolbox = {
   primary: [

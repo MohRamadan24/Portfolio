@@ -409,7 +409,9 @@ export default function QAPortfolio() {
     experience,
     certifications,
     faqs,
-    resume
+    resume,
+    approaches,
+    approaches_extra
   } = data
 
   const handleDownload = () => {
@@ -668,6 +670,40 @@ export default function QAPortfolio() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </section>
+
+        <Separator className="my-12 bg-white/10" />
+
+        {/* APPROACH */}
+        <section className="space-y-6" aria-label="Toolbox">
+          <SectionHeading
+            eyebrow="APPROACH"
+            title="How I Think as a QA"
+            description="Quality is not only about finding bugs. It is about understanding risk, protecting users, and supporting better decisions throughout the software testing life cycle."
+          />
+
+          <div className="grid gap-4 md:grid-cols-2">
+            {approaches.map((approach) => (
+            <Card className="border-white/10 bg-white/5 text-white backdrop-blur hover:bg-white/10">
+              <CardHeader className="pb-3">
+                <span class="text-sm text-white/40">{approach.number}</span>
+                <CardTitle className="text-base">{approach.title}</CardTitle>
+              </CardHeader>
+              <CardContent className="flex flex-wrap gap-2">
+                  <p className="text-sm leading-6 text-white/60">{approach.description}</p>
+              </CardContent>
+            </Card>
+            ))}
+          </div>
+          <div class="mt-8 rounded-2xl border border-white/20 bg-white/10 backdrop-blur-lg p-8">
+            <span class="text-sm text-white/50">{approaches_extra.coreQuestionTitle}</span>
+            <h3 class="mt-2 text-2xl font-semibold text-white">
+              {approaches_extra.coreQuestionHeading}
+            </h3>
+            <p class="mt-4 text-white/70 leading-relaxed max-w-3xl">
+              {approaches_extra.coreQuestionDescription}
+            </p>
           </div>
         </section>
 
