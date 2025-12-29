@@ -3,6 +3,54 @@
 
 import { Instagram } from "lucide-react";
 
+export const pageDetails = {
+  headerTitle: "ポートフォリオ",
+  viewWorkButton: "実績を見る",
+  profileBadge: "QA案件対応可能",
+  coreFocusLabel: "コアフォーカス",
+  servicesEyebrow: "提供内容",
+  servicesTitle: "信頼性の高いデジタルプロダクトを構築",
+  servicesDescription:
+    "テストからリリース準備完了のWebサイトまで、あらゆるフェーズでプロダクトを支援し、品質・使いやすさ・安定したリリースを実現します。",
+  servicesBadge1: "明確なコミュニケーション",
+  servicesBadge2: "整理されたレポーティング",
+  approachesEyebrow: "アプローチ",
+  approachesTitle: "QAとしての思考方法",
+  approachesDescription:
+    "品質とは単にバグを見つけることではありません。リスクを理解し、ユーザーを守り、ソフトウェアテストライフサイクル全体でより良い意思決定を支援することです。",
+  toolboxEyebrow: "ツール",
+  toolboxTitle: "ツール・テスト種別・成果物",
+  toolboxDescription:
+    "計画から成果物まで、適切なツールとプロセスを用いて、すべてのプロジェクトを効率的かつ高品質に進めます。",
+  toolboxPrimarytoolLabel: "主要ツール",
+  toolboxTestingtypeLabel: "テスト範囲",
+  toolboxDeliverablesLabel: "成果物",
+  reviewsEyebrow: "実績・評価",
+  reviewsTitle: "クライアントの声",
+  reviewsDescription:
+    "コミュニケーションの明確さや成果の影響について、クライアントからの評価をご覧ください。",
+  reviewsBadgeTitle: "評価されたポイント",
+  portfolioEyebrow: "ポートフォリオ",
+  portfolioTitle: "Webサイト実績",
+  portfolioDescription:
+    "これまでに構築したWebサイトの一覧です。デザイン、レスポンシブ対応、ユーザー体験など、幅広いプロジェクトを紹介しています。",
+  experienceEyebrow: "職務経歴",
+  experienceTitle: "経験",
+  experienceDescription:
+    "これまでの職務経験をまとめ、担当した役割、責任、プロジェクトへの貢献を紹介します。",
+  credentialsEyebrow: "資格・学習",
+  credentialsTitle: "資格・学習実績",
+  credentialsDescription:
+    "これまでに取得した資格や修了した学習プログラムをまとめ、専門性と継続的な学習姿勢を示しています。",
+  credentialsButton: "資格を見る",
+  contactEyebrow: "お問い合わせ",
+  contactTitle: "一緒に仕事をしませんか",
+  contactDescription:
+    "新しいプロジェクトやコラボレーション、機会について常に前向きです。ぜひご連絡ください。",
+};
+
+
+
 export const resume = {
   title: "CVをダウンロード",
 }
@@ -63,6 +111,52 @@ export const services = [
     ],
   },
 ];
+
+export const approaches = [
+  {
+    number: "01",
+    title: "テストの前に、まず課題を理解する",
+    description:
+      "テストケースを書く前に、私はまずプロダクトが解決しようとしている本当の課題を理解することに注力します。ビジネスの目的やユーザーの課題を理解せずに行うテストは、誤った安心感を生むことがあります。",
+  },
+  {
+    number: "02",
+    title: "テスト手順ではなく、実際のユーザー視点で考える",
+    description:
+      "私は理想的な操作フローだけでなく、実際のユーザーがどのように使うかを想定してテストします。想定外の操作やエッジケースも含めて検証します。",
+  },
+  {
+    number: "03",
+    title: "カバレッジの数値よりもリスクを重視する",
+    description:
+      "高いテストカバレッジが必ずしも高品質を意味するわけではありません。私は影響度、発生確率、ビジネスリスクを基準にテストの優先度を決めます。",
+  },
+  {
+    number: "04",
+    title: "バグは責任追及ではなく、情報である",
+    description:
+      "バグは誰かのミスではなく、システムからの重要な情報だと考えています。再現手順を含む客観的な報告は、迅速な修正と健全なチーム連携につながります。",
+  },
+  {
+    number: "05", 
+    title: "自動化は見せるためではなく、品質を守るために使う",
+    description:
+      "自動化は成果を誇示するためのものではなく、品質を守るための安全装置です。回帰テストや高リスクな部分に絞って、自動化を活用します。",
+  },
+  {
+    number: "06",
+    title: "品質はチーム全体の責任である",
+    description:
+      "私は開発者やプロダクトチームと密に連携し、要件定義からリリース判断まで一貫して品質を意識したコミュニケーションを行います。",
+  },
+];
+
+export const approaches_extra = {
+  coreQuestionTitle: "コアとなる問い",
+  coreQuestionHeading: "何が問題になり得るのか？",
+  coreQuestionDescription:
+    "この問いは、要件定義、設計、実装、テスト、リリースのすべての段階で私の思考を導きます。問題を早期に予測し、本番環境でユーザーを守るための重要な視点です。",
+};
 
 
 export const toolbox = {

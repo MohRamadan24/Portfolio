@@ -38,6 +38,7 @@ import {
   Download
 } from "lucide-react";
 import { max } from "date-fns";
+import { pageDetails } from "@/mock/mock_en";
 
 function LanguageDropdown() {
   const { data, lang, setLang } = useLanguage()
@@ -166,7 +167,7 @@ function Header() {
             <Sparkles className="h-4 w-4 text-[#b98cff]" />
           </span>
           <span className="hidden sm:inline text-base">{profile.name}</span>
-          <span className="sm:hidden">QA</span>
+          <span className="sm:hidden">{pageDetails.headerTitle}</span>
         </button>
 
         <nav className="hidden items-center gap-1 md:flex">
@@ -207,7 +208,7 @@ function Header() {
             className="rounded-full bg-[#b98cff] text-[#0b0d12] hover:bg-[#c8a5ff]"
             onClick={() => scrollToId("portfolio")}
           >
-            View work <ArrowUpRight className="ml-1 h-4 w-4" />
+            {pageDetails.viewWorkButton} <ArrowUpRight className="ml-1 h-4 w-4" />
           </Button>
         </div>
       </div>
@@ -371,7 +372,7 @@ function ReviewCard({ review }) {
 
                   <div className="">
                     <div className="text-xs font-semibold tracking-[0.22em] text-white/50">
-                      THINGS THAT WENT WELL
+                      {pageDetails.reviewsBadgeTitle}
                     </div>
                     <div className="mt-3 flex flex-wrap gap-2">
                       {(review.tags || []).map((t) => (
@@ -411,7 +412,8 @@ export default function QAPortfolio() {
     faqs,
     resume,
     approaches,
-    approaches_extra
+    approaches_extra,
+    pageDetails
   } = data
 
   const handleDownload = () => {
@@ -529,7 +531,7 @@ export default function QAPortfolio() {
               </GlassPill>
               <GlassPill>
                 <CheckCircle2 className="h-3.5 w-3.5 text-[#b98cff]" />
-                <span>Available for QA gigs</span>
+                <span>{pageDetails.profileBadge}</span>
               </GlassPill>
             </div>
 
@@ -604,7 +606,7 @@ export default function QAPortfolio() {
 
                 <div className="mt-4">
                   <div className="text-xs font-semibold tracking-[0.24em] text-white/50">
-                    CORE FOCUS
+                    {pageDetails.coreFocusLabel}
                   </div>
                   <div className="mt-3 flex flex-wrap gap-2">
                     {["User Experience", "Bug triage","Load Performance", "Release readiness", ].map(
@@ -629,18 +631,18 @@ export default function QAPortfolio() {
         {/* SERVICES */}
         <section id="services" className="space-y-6">
           <SectionHeading
-            eyebrow="WHAT I DO"
-            title="Building Reliable Digital Products"
-            description="From testing and design to launch-ready websites, I support products at every stage to ensure quality, usability, and smooth releases."
+            eyebrow={pageDetails.servicesEyebrow}
+            title={pageDetails.servicesTitle}
+            description={pageDetails.servicesDescription}
             right={
               <div className="flex flex-wrap gap-2">
                 <GlassPill className="border-[#b98cff]/25 bg-[#b98cff]/10 text-white/80">
                   <Users className="h-3.5 w-3.5 text-white/60" />
-                  Clear Communication
+                  {pageDetails.servicesBadge1}
                 </GlassPill>
                 <GlassPill>
                   <CheckCircle2 className="h-3.5 w-3.5 text-white/60" />
-                  Clean reporting
+                  {pageDetails.servicesBadge2}
                 </GlassPill>
               </div>
             }
@@ -676,11 +678,11 @@ export default function QAPortfolio() {
         <Separator className="my-12 bg-white/10" />
 
         {/* APPROACH */}
-        <section className="space-y-6" aria-label="Toolbox">
+        <section className="space-y-6" aria-label="Approach">
           <SectionHeading
-            eyebrow="APPROACH"
-            title="How I Think as a QA"
-            description="Quality is not only about finding bugs. It is about understanding risk, protecting users, and supporting better decisions throughout the software testing life cycle."
+            eyebrow={pageDetails.approachesEyebrow}
+            title={pageDetails.approachesTitle}
+            description={pageDetails.approachesDescription}
           />
 
           <div className="grid gap-4 md:grid-cols-2">
@@ -712,15 +714,15 @@ export default function QAPortfolio() {
         {/* TOOLBOX */}
         <section className="space-y-6" aria-label="Toolbox">
           <SectionHeading
-            eyebrow="TOOLBOX"
-            title="Tools, testing types, and deliverables"
-            description="From planning and testing to deliverables, I use the right tools and processes to ensure every project is efficient, thorough, and high-quality."
+            eyebrow={pageDetails.toolboxEyebrow}
+            title={pageDetails.toolboxTitle}
+            description={pageDetails.toolboxDescription}
           />
 
           <div className="grid gap-4 md:grid-cols-3">
             <Card className="border-white/10 bg-white/5 text-white backdrop-blur">
               <CardHeader className="pb-3">
-                <CardTitle className="text-base">Primary tools</CardTitle>
+                <CardTitle className="text-base">{pageDetails.toolboxPrimarytoolLabel}</CardTitle>
               </CardHeader>
               <CardContent className="flex flex-wrap gap-2">
                 {toolbox.primary.map((t) => (
@@ -735,7 +737,7 @@ export default function QAPortfolio() {
             </Card>
             <Card className="border-white/10 bg-white/5 text-white backdrop-blur">
               <CardHeader className="pb-3">
-                <CardTitle className="text-base">Testing coverage</CardTitle>
+                <CardTitle className="text-base">{pageDetails.toolboxTestingtypeLabel}</CardTitle>
               </CardHeader>
               <CardContent className="flex flex-wrap gap-2">
                 {toolbox.testing.map((t) => (
@@ -750,7 +752,7 @@ export default function QAPortfolio() {
             </Card>
             <Card className="border-white/10 bg-white/5 text-white backdrop-blur">
               <CardHeader className="pb-3">
-                <CardTitle className="text-base">Deliverables</CardTitle>
+                <CardTitle className="text-base">{pageDetails.toolboxDeliverablesLabel}</CardTitle>
               </CardHeader>
               <CardContent className="flex flex-wrap gap-2">
                 {toolbox.deliverables.map((t) => (
@@ -771,12 +773,11 @@ export default function QAPortfolio() {
         {/* REVIEWS */}
         <section id="reviews" className="space-y-6">
           <SectionHeading
-            eyebrow="SOCIAL PROOF"
-            title="Client reviews"
-            description="Hear from clients about their experience working together, the clarity of communication, and the impact of the results."
+            eyebrow={pageDetails.reviewsEyebrow}
+            title={pageDetails.reviewsTitle}
+            description={pageDetails.reviewsDescription}
           />
-          
-
+      
           <div className="grid gap-4 md:grid-cols-2">
             {[...reviews].reverse().map((r) => (
               <ReviewCard key={r.id} review={r} />
@@ -789,9 +790,9 @@ export default function QAPortfolio() {
         {/* PORTFOLIO */}
         <section id="portfolio" className="space-y-6">
           <SectionHeading
-            eyebrow="PORTFOLIO"
-            title="Website Showcase"
-            description="Explore a collection of websites I’ve built, showcasing their design, responsiveness, and user experience, while reflecting the variety of projects and solutions I’ve delivered."
+            eyebrow={pageDetails.portfolioEyebrow}
+            title={pageDetails.portfolioTitle}
+            description={pageDetails.portfolioDescription}
           />
 
           <div className="grid gap-4 md:grid-cols-2">
@@ -851,9 +852,9 @@ export default function QAPortfolio() {
         {/* EXPERIENCE */}
         <section id="experience" className="space-y-6">
           <SectionHeading
-            eyebrow="WORK HISTORY"
-            title="Experience"
-            description="A summary of my professional experience, highlighting roles, responsibilities, and project contributions."
+            eyebrow={pageDetails.experienceEyebrow}
+            title={pageDetails.experienceTitle}
+            description={pageDetails.experienceDescription}
           />
 
           <Card className="border-white/10 bg-white/5 text-white backdrop-blur">
@@ -930,9 +931,9 @@ export default function QAPortfolio() {
         {/* CERTS */}
         <section className="space-y-6" aria-label="Certifications">
           <SectionHeading
-            eyebrow="CREDENTIALS"
-            title="Certifications & learning"
-            description="A curated collection of my certifications and completed learning programs, demonstrating the skills and knowledge I’ve acquired to support my work." 
+            eyebrow={pageDetails.credentialsEyebrow}
+            title={pageDetails.credentialsTitle}
+            description={pageDetails.credentialsDescription}
           />
 
           <div className="grid gap-4 md:grid-cols-2">
@@ -963,7 +964,7 @@ export default function QAPortfolio() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Show credential <ExternalLink className="ml-2 h-4 w-4" />
+                      {pageDetails.credentialsButton} <ExternalLink className="ml-2 h-4 w-4" />
                     </a>
                   </div>
                 </CardHeader>
@@ -1012,9 +1013,9 @@ export default function QAPortfolio() {
         {/* CONTACT */}
         <section id="contact" className="space-y-6">
           <SectionHeading
-            eyebrow="CONTACT"
-            title="Let’s work together"
-            description="I’m open to new projects, collaborations, and opportunities — let’s connect." 
+            eyebrow={pageDetails.contactEyebrow}
+            title={pageDetails.contactTitle}
+            description={pageDetails.contactDescription}
             right={
               <div className="flex flex-wrap gap-2">
                 <a

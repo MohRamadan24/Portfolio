@@ -2,6 +2,52 @@
 
 import { Instagram } from "lucide-react";
 
+export const pageDetails = {
+  headerTitle: "Portofolio",
+  viewWorkButton: "View Work",
+  profileBadge: "Available for QA gigs",
+  coreFocusLabel: "CORE FOCUS",
+  servicesEyebrow: "WHAT I DO",
+  servicesTitle: "Membangun produk digital yang berkualitas",
+  servicesDescription:
+    "Mulai dari pengujian hingga peluncuran website yang siap produksi, saya mendukung produk di setiap tahap untuk memastikan kualitas, kemudahan penggunaan, dan rilis yang lancar.",
+  servicesBadge1: "Komunikasi yang Jelas",
+  servicesBadge2: "Pelaporan yang Rapi",
+  approachesEyebrow: "APPROACH",
+  approachesTitle: "Cara saya berpikir sebagai QA",
+  approachesDescription:
+    "Kualitas bukan hanya tentang menemukan bug. Kualitas adalah tentang memahami risiko, melindungi pengguna, dan mendukung pengambilan keputusan yang lebih baik sepanjang siklus pengujian perangkat lunak.",
+  toolboxEyebrow: "TOOLBOX",
+  toolboxTitle: "Tools, jenis pengujian, dan hasil kerja",
+  toolboxDescription:
+    "Dari perencanaan hingga hasil akhir, saya menggunakan tools dan proses yang tepat untuk memastikan setiap proyek berjalan efisien, menyeluruh, dan berkualitas tinggi.",
+  toolboxPrimarytoolLabel: "Tools utama",
+  toolboxTestingtypeLabel: "Cakupan pengujian",
+  toolboxDeliverablesLabel: "Hasil kerja",
+  reviewsEyebrow: "SOCIAL PROOF",
+  reviewsTitle: "Ulasan klien",
+  reviewsDescription:
+    "Pendapat klien tentang pengalaman bekerja bersama, kejelasan komunikasi, dan dampak dari hasil yang diberikan.",
+  reviewsBadgeTitle: "HAL-HAL YANG BERJALAN BAIK",
+  portfolioEyebrow: "PORTOFOLIO",
+  portfolioTitle: "Showcase website",
+  portfolioDescription:
+    "Jelajahi kumpulan website yang telah saya bangun, menampilkan desain, responsivitas, dan pengalaman pengguna dari berbagai jenis proyek.",
+  experienceEyebrow: "WORK HISTORY",
+  experienceTitle: "Pengalaman",
+  experienceDescription:
+    "Ringkasan pengalaman profesional saya, mencakup peran, tanggung jawab, dan kontribusi dalam proyek.",
+  credentialsEyebrow: "CREDENTIALS",
+  credentialsTitle: "Sertifikasi & pembelajaran",
+  credentialsDescription:
+    "Kumpulan sertifikasi dan program pembelajaran yang telah saya selesaikan untuk mendukung keahlian dan pengembangan profesional saya.",
+  credentialsButton: "Lihat Sertifikat",
+  contactEyebrow: "CONTACT",
+  contactTitle: "Let’s work together",
+  contactDescription:
+    "Saya terbuka untuk proyek baru, kolaborasi, dan peluang lainnya — let's connect.",
+};
+
 export const resume = {
   title: "Unduh CV",
 }
@@ -62,6 +108,51 @@ export const services = [
     ],
   },
 ];
+
+export const approaches = [
+  {
+    number: "01",
+    title: "Memahami Masalah Sebelum Melakukan Pengujian",
+    description:
+      "Sebelum menulis test case, saya fokus memahami masalah nyata yang ingin diselesaikan oleh produk — mulai dari tujuan bisnis hingga pain point pengguna. Pengujian tanpa konteks sering kali memberikan rasa aman yang semu.",
+  },
+  {
+    number: "02",
+    title: "Berpikir dalam Skenario Pengguna Nyata",
+    description:
+      "Saya menguji fitur sebagaimana pengguna nyata berinteraksi dengannya — termasuk edge case dan perilaku tak terduga — bukan hanya melalui alur ideal yang terstruktur.",
+  },
+  {
+    number: "03",
+    title: "Memprioritaskan Risiko Dibanding Angka Coverage",
+    description:
+      "Tingginya test coverage tidak selalu mencerminkan kualitas yang baik. Saya memprioritaskan pengujian berdasarkan tingkat risiko, dampak, dan kemungkinan kegagalan, terutama pada alur yang krusial bagi pengguna dan bisnis.",
+  },
+  {
+    number: "04",
+    title: "Bug adalah Informasi, Bukan Kesalahan",
+    description:
+      "Saya memandang bug sebagai sinyal dari sistem, bukan sebagai kesalahan individu. Pelaporan yang jelas dan objektif membantu perbaikan lebih cepat, kolaborasi yang sehat, dan kualitas produk yang lebih baik.",
+  },
+  {
+    number: "05", 
+    title: "Automasi untuk Melindungi Kualitas, Bukan untuk Pamer",
+    description:
+      "Automasi adalah jaring pengaman, bukan ajang pembuktian. Saya menggunakannya untuk pengujian berulang dan area berisiko tinggi agar mencegah regresi, dengan tetap menjaga test tetap sederhana dan mudah dirawat.",
+  },
+  {
+    number: "06",
+    title: "Kualitas adalah Tanggung Jawab Bersama",
+    description:
+      "Saya berkolaborasi erat dengan developer dan tim produk sejak tahap awal diskusi hingga keputusan rilis, untuk menyelaraskan ekspektasi dan meminimalkan pekerjaan ulang yang tidak perlu.",
+  },
+];
+export const approaches_extra = {
+  coreQuestionTitle: "Pertanyaan Utama",
+  coreQuestionHeading: "Apa yang mungkin bermasalah?",
+  coreQuestionDescription:
+    "Pertanyaan ini membimbing cara berpikir saya di setiap tahap — mulai dari requirement, desain, implementasi, pengujian, hingga rilis. Pendekatan ini membantu mengantisipasi kegagalan lebih awal dan melindungi pengguna sebelum masalah muncul di produksi.",
+};
 
 export const toolbox = {
   primary: [

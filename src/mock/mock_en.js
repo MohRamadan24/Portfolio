@@ -4,6 +4,46 @@
 import { Instagram } from "lucide-react";
 import { number } from "zod";
 
+export const pageDetails = {
+  headerTitle: "Portfolio",
+  viewWorkButton: "View Work",
+  profileBadge: "Available for QA gigs",
+  coreFocusLabel: "CORE FOCUS",
+  servicesEyebrow: "WHAT I DO",
+  servicesTitle: "Building reliable digital products",
+  servicesDescription:
+    "From testing and design to launch-ready websites, I support products at every stage to ensure quality, usability, and smooth releases.",
+  servicesBadge1: "Clear Communication",
+  servicesBadge2: "Clean reporting",
+  approachesEyebrow: "APPROACH",
+  approachesTitle: "How I think as a QA",
+  approachesDescription:
+    "Quality is not only about finding bugs. It is about understanding risk, protecting users, and supporting better decisions throughout the software testing life cycle.",
+  toolboxEyebrow: "TOOLBOX",
+  toolboxTitle: "Tools, testing types, and deliverables",
+  toolboxDescription: "From planning and testing to deliverables, I use the right tools and processes to ensure every project is efficient, thorough, and high-quality.",
+  toolboxPrimarytoolLabel: "Primary tools",
+  toolboxTestingtypeLabel: "Testing coverage",
+  toolboxDeliverablesLabel: "Deliverables",
+  reviewsEyebrow: "SOCIAL PROOF",
+  reviewsTitle: "Client reviews",
+  reviewsDescription: "Hear from clients about their experience working together, the clarity of communication, and the impact of the results.",
+  reviewsBadgeTitle: "THINGS THAT WENT WELL",
+  portfolioEyebrow: "PORTFOLIO",
+  portfolioTitle: "Website showcase",
+  portfolioDescription: "Explore a collection of websites I’ve built, showcasing their design, responsiveness, and user experience, while reflecting the variety of projects and solutions I’ve delivered.",
+  experienceEyebrow: "WORK HISTORY",
+  experienceTitle: "Experience",
+  experienceDescription: "A summary of my professional experience, highlighting roles, responsibilities, and project contributions.",
+  credentialsEyebrow: "CREDENTIALS",
+  credentialsTitle: "Certifications & learning",
+  credentialsDescription: "A curated collection of my certifications and completed learning programs, demonstrating the skills and knowledge I’ve acquired to support my work.",
+  credentialsButton: "Show Credential",
+  contactEyebrow: "CONTACT",
+  contactTitle: "Let’s work together",
+  contactDescription: "I’m open to new projects, collaborations, and opportunities — let’s connect.",
+}
+
 export const resume = {
   title: "Download CV",
 }
