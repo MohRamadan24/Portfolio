@@ -370,6 +370,26 @@ export const reviews = [
       "Bug free",
     ],
   },
+  {
+    id: "r7",
+    client: { name: "ibm8292", avatarSeed: "ibm8292" },
+    ...baseReview,
+    countryCode: "US",
+    country : "United States（アメリカ合衆国）",
+    stars: 5,
+    timeAgo: "一週間前",
+    body:
+      "Great UAT work. Clear feedback. Fast turnaround. Caught real issues and explained them well. Easy to work with. Would work with them again.",
+    tags: [
+      "Deep understanding",
+      "Delivery time",
+      "Went above and beyond",
+      "Quick responsiveness",
+      "Attention to details",
+      "Professionalism of work",
+      "Exceeded expectations",
+    ],
+  },
 ];
 
 
