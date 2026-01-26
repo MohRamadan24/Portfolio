@@ -427,7 +427,7 @@ export const experience = [
     id: "e1",
     title: "Software Tester (Freelance)",
     company: "PT. Alpha Tech Indonesia",
-    period: "Oct 2021 - November 2021",
+    period: "Oct 2021 - Nov 2021",
     duration: "1 month",
     opening:
       "I gained freelance experience as a software tester for a software company, specializing in:",
@@ -645,8 +645,8 @@ export const experience = [
     id: "e12",
     title: "QA Specialist",
     company: "NNTRAVEL LLC",
-    period: "Oct 2025 — Dec 2025",
-    duration: "3 months",
+    period: "Oct 2025 — Jan 2026",
+    duration: "4 months",
     opening:
       "In my role as a QA Specialist, I ensure the quality and reliability of a hotel booking application across mobile platforms and admin systems, including:",
     bullets: [

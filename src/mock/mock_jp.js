@@ -654,8 +654,8 @@ export const experience = [
     id: "e12",
     title: "QAスペシャリスト",
     company: "NNTRAVEL LLC",
-    period: "2025年10月 — 2025年12月",
-    duration: "3か月",
+    period: "2025年10月 — 2026年1月",
+    duration: "4か月",
     opening:
       "QAスペシャリストとして、ホテル予約アプリケーションのモバイルおよび管理システム上での品質と信頼性を確保しました：",
     bullets: [

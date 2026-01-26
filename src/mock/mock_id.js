@@ -646,8 +646,8 @@ export const experience = [
     id: "e12",
     title: "QA Specialist",
     company: "NNTRAVEL LLC",
-    period: "Oct 2025 — Dec 2025",
-    duration: "3 months",
+    period: "Oct 2025 — Jan 2026",
+    duration: "4 months",
     opening:
       "Dalam peran saya sebagai QA Specialist, saya memastikan kualitas dan keandalan aplikasi booking hotel di platform mobile maupun sistem admin, termasuk:",
     bullets: [
