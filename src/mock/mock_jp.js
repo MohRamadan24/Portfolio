@@ -63,7 +63,7 @@ export const profile = {
   summary:
     "私はソフトウェアの品質を確保することにおいて、3年以上の経験を持つQAアナリストです。優れた口頭および文章でのコミュニケーション能力を備え、複雑なソフトウェアの問題をわかりやすく説明することが得意です。効果的なテスト戦略により、プロダクションへのバグ流出を最大95％削減しました。細部に注意を払い、チームと協力し、高品質なソフトウェア製品を提供することに尽力しています。",
   quickStats: [
-    { label: "経験", value: "4年以上" },
+    { label: "経験", value: "6年以上" },
     { label: "バグ流出削減率", value: "最大95％" },
     { label: "対応プラットフォーム", value: "Web • Android • iOS" },
   ],
@@ -652,8 +652,9 @@ export const experience = [
   },
   {
     id: "e12",
-    title: "QAスペシャリスト",
+    title: "QAスペシャリスト（パートタイム）",
     company: "NNTRAVEL LLC",
+    status: "Current",
     period: "2025年10月 — 2026年1月",
     duration: "4か月",
     opening:
@@ -670,6 +671,52 @@ export const experience = [
     stack: ["Microsoft Teams", "Google Sheets", "Chrome DevTools", "Google Drive"],
     skills: ["Testing Process", "Text Planning", "Bug Triage", "Test-Driven Development", "Test Cases"],
     location: "Saudi Arabia - Remote"
+  },
+  {
+    id: "e13",
+  title: "QAスペシャリスト",
+  company: "KUKU FM",
+  status: "Current",
+  period: "2026年2月 — 現在",
+  duration: "2ヶ月",
+  opening:
+    "QAスペシャリストとして、包括的なテストを実施しシステム上の問題を特定することで、Androidモバイルアプリケーションの品質と信頼性を確保する役割を担いました。主な業務内容：",
+  bullets: [
+    "Androidアプリケーションに対して詳細な機能テストおよびユーザビリティテストを実施し、バグや不整合を特定。",
+    "成功トランザクション、エラーハンドリング、返金シナリオを含む、決済フロー全体のエンドツーエンドテストを実施。",
+    "システム機能を評価し、改善が必要な箇所や社内品質基準を満たしていない点をドキュメント化。",
+    "各機能がビジュアル、機能面、ユーザー体験の要件を満たしているかを検証。",
+    "システムのパフォーマンスと製品の一貫性向上のため、明確なバグレポートおよび改善提案を提供。",
+    "開発チームと連携し、バグ修正の検証および安定したアプリケーションリリースを確認。"
+  ],
+  ending:
+    "本ポジションでは、細部への注意力、ユーザー視点での思考力、そして高品質なプロダクトを維持するためのコミットメントを発揮しました。",
+    stack: ["Slack", "Google Sheets", "Google Drive"],
+    skills: ["Testing Process", "Text Planning", "Bug Triage", "Test-Driven Development", "Test Cases"],
+    location: "Mumbai, India - Remote"
+  },
+  {
+    id: "e14",
+    title: "コンテンツ品質管理（QC）",
+    company: "KUKU FM",
+    status: "Current",
+    period: "2026年2月 — 現在",
+    duration: "2ヶ月",
+    opening:
+      "脚本、吹き替え、字幕を含むローカライズされた映像コンテンツの品質と一貫性を確保するため、言語面、パフォーマンス面、技術面における包括的な品質チェックを実施しました。主な業務内容：",
+    bullets: [
+      "翻訳の正確性、トーンの一貫性、自然なローカライズを確保するための言語QAを実施。",
+      "リップシンクの整合性、発音、アクセントの正確性、感情表現を含む吹き替え品質をレビュー。",
+      "脚本および字幕における専門用語や固有名詞の一貫性を検証。",
+      "音声の明瞭性、BGMとのバランス、技術的問題の有無を確認する音声品質チェックを実施。",
+      "字幕（SRT）のタイミング精度、フォーマット、言語品質をレビュー。",
+      "問題点を記録し、チームと連携して高品質で配信可能なコンテンツを実現。"
+    ],
+    ending:
+      "ローカライズされたメディアコンテンツ全体において、高い品質基準と一貫性を維持することで制作プロセスをサポートしました。",
+    stack: ["Slack", "Google Sheets", "Google Docs", "Google Drive"],
+    skills: ["Linguistic QC", "Translation Accuracy", "Content Quality Assurance", "Localization Review", "Audio Quality Review"],
+    location: "Mumbai, India - Remote"
   },
 ];
 

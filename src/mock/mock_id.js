@@ -60,7 +60,7 @@ export const profile = {
   summary:
     "Saya adalah QA Analyst dengan pengalaman lebih dari tiga tahun dalam memastikan kualitas perangkat lunak. Saya memiliki kemampuan komunikasi verbal dan tulisan yang baik serta mahir menjelaskan masalah perangkat lunak yang kompleks dengan jelas dan mudah dimengerti. Melalui strategi pengujian yang efektif, saya berhasil meminimalkan bug hingga 95%. Saya detail, kolaboratif, dan berkomitmen untuk menghasilkan produk perangkat lunak berkualitas tinggi.",
   quickStats: [
-    { label: "Pengalaman", value: "4+ tahun" },
+    { label: "Pengalaman", value: "6+ tahun" },
     { label: "Pengurangan bug", value: "Hingga 95%" },
     { label: "Platform", value: "Web • Android • iOS" },
   ],
@@ -644,9 +644,10 @@ export const experience = [
   },
   {
     id: "e12",
-    title: "QA Specialist",
+    title: "QA Specialist (Part-time)",
     company: "NNTRAVEL LLC",
-    period: "Oct 2025 — Jan 2026",
+    status: "Current",
+    period: "Oct 2025 — Sekarang",
     duration: "4 months",
     opening:
       "Dalam peran saya sebagai QA Specialist, saya memastikan kualitas dan keandalan aplikasi booking hotel di platform mobile maupun sistem admin, termasuk:",
@@ -662,6 +663,52 @@ export const experience = [
     stack: ["Microsoft Teams", "Google Sheets", "Chrome DevTools", "Google Drive"],
     skills: ["Testing Process", "Text Planning", "Bug Triage", "Test-Driven Development", "Test Cases"],
     location: "Saudi Arabia - Remote"
+  },
+  {
+    id: "e13",
+    title: "QA Specialist",
+    company: "KUKU FM",
+    status: "Current",
+    period: "Februari 2026 — Sekarang",
+    duration: "2 months",
+    opening:
+      "Sebagai QA Specialist, saya bertanggung jawab memastikan kualitas dan keandalan aplikasi mobile Android melalui pengujian menyeluruh serta identifikasi berbagai permasalahan sistem. Tanggung jawab utama:",
+    bullets: [
+      "Melakukan pengujian fungsional dan usability secara mendetail pada aplikasi Android untuk mengidentifikasi bug dan ketidaksesuaian.",
+      "Menguji alur pembayaran end-to-end, termasuk transaksi berhasil, penanganan kegagalan, serta skenario refund.",
+      "Mengevaluasi fungsi sistem dan mendokumentasikan area yang memerlukan perbaikan atau tidak memenuhi standar kualitas internal.",
+      "Memastikan setiap fitur memenuhi persyaratan visual, fungsional, dan pengalaman pengguna.",
+      "Menyusun laporan bug yang jelas serta memberikan saran perbaikan untuk meningkatkan performa dan konsistensi sistem.",
+      "Berkolaborasi dengan developer untuk memverifikasi perbaikan bug dan memastikan aplikasi dapat berjalan dengan stabil."
+    ],
+    ending:
+      "Peran ini menonjolkan perhatian saya terhadap detail, kemampuan berpikir dari sudut pandang pengguna, serta komitmen dalam menjaga kualitas produk yang tinggi.",
+    stack: ["Slack", "Google Sheets", "Google Drive"],
+    skills: ["Testing Process", "Text Planning", "Bug Triage", "Test-Driven Development", "Test Cases"],
+    location: "Mumbai, India - Remote"
+  },
+  {
+    id: "e14",
+    title: "Content Quality Control",
+    company: "KUKU FM",
+    status: "Current",
+    period: "Februari 2026 — Sekarang",
+    duration: "2 months",
+    opening:
+      "Memastikan kualitas dan konsistensi konten audiovisual yang telah dilokalisasi, termasuk naskah, dubbing, dan subtitle, melalui proses pemeriksaan kualitas dari sisi linguistik, performa, serta teknis. Tanggung jawab utama:",
+    bullets: [
+      "Melakukan QA linguistik untuk memastikan akurasi terjemahan, konsistensi nada, serta naturalitas dialog hasil lokalisasi.",
+      "Meninjau kualitas dubbing, termasuk kesesuaian lip sync, pelafalan, akurasi aksen, serta penyampaian emosi.",
+      "Memverifikasi konsistensi istilah dan nama khusus pada naskah maupun subtitle.",
+      "Melakukan pengecekan kualitas audio untuk memastikan dialog jelas, keseimbangan dengan musik latar, serta tidak adanya masalah teknis.",
+      "Meninjau file subtitle (SRT) untuk memastikan ketepatan timing, format yang sesuai, serta kualitas bahasa yang baik.",
+      "Mendokumentasikan temuan serta berkolaborasi dengan tim untuk memastikan konten siap rilis dengan kualitas tinggi."
+    ],
+    ending:
+      "Berperan dalam mendukung proses produksi dengan menjaga standar kualitas dan konsistensi tinggi pada konten media yang telah dilokalisasi.",
+    stack: ["Slack", "Google Sheets", "Google Docs", "Google Drive"],
+    skills: ["Linguistic QC", "Translation Accuracy", "Content Quality Assurance", "Localization Review", "Audio Quality Review"],
+    location: "Mumbai, India - Remote"
   },
 ];
 

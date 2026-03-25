@@ -57,7 +57,7 @@ export const profile = {
   summary:
     "I am a QA Analyst with over three years of experience in ensuring software quality. I possess strong verbal and written communication skills and am adept at explaining complex software issues in a clear and understandable manner. Through effective testing strategies, I significantly minimized bug leakage into production, achieving a reduction of up to 95%. I am detail-oriented, collaborative, and committed to delivering high-quality software products.",
   quickStats: [
-    { label: "Experience", value: "4+ years" },
+    { label: "Experience", value: "6+ years" },
     { label: "Bug leakage reduction", value: "Up to 95%" },
     { label: "Platforms", value: "Web • Android • iOS" },
   ],
@@ -643,10 +643,11 @@ export const experience = [
   },
   {
     id: "e12",
-    title: "QA Specialist",
+    title: "QA Specialist (Part-time)",
     company: "NNTRAVEL LLC",
-    period: "Oct 2025 — Jan 2026",
-    duration: "4 months",
+    status : "Current",
+    period: "Oct 2025 — Present",
+    duration: "6 months",
     opening:
       "In my role as a QA Specialist, I ensure the quality and reliability of a hotel booking application across mobile platforms and admin systems, including:",
     bullets: [
@@ -661,6 +662,52 @@ export const experience = [
     stack: ["Microsoft Teams", "Google Sheets", "Chrome DevTools", "Google Drive"],
     skills: ["Testing Process", "Text Planning", "Bug Triage", "Test-Driven Development", "Test Cases"],
     location: "Saudi Arabia - Remote"
+  },
+  {
+    id: "e13",
+    title: "QA Specialist",
+    company: "KUKU FM",
+    status : "Current",
+    period: "Feb 2026 — Present",
+    duration: "2 months",
+    opening:
+      "As a QA Specialist, I was responsible for ensuring the quality and reliability of the Android mobile application by performing comprehensive testing and identifying system issues. Key responsibilities:",
+    bullets: [
+      "Conducted detailed functional and usability testing on Android applications to identify bugs and inconsistencies.",
+      "Tested the end-to-end payment workflow, including successful transactions, error handling, and refund scenarios.",
+      "Evaluated system functionality and documented areas requiring improvement or not meeting internal quality standards.",
+      "Verified that each feature met visual, functional, and user experience requirements.",
+      "Provided clear bug reports and improvement suggestions to enhance system performance and product consistency.",
+      "Collaborated with developers to validate bug fixes and ensure stable application releases.",
+    ],
+    ending:
+      "This role highlights my attention to detail, ability to think from the user's perspective, and commitment to maintaining high product quality.",
+    stack: ["Slack", "Google Sheets", "Google Drive"],
+    skills: ["Testing Process", "Text Planning", "Bug Triage", "Test-Driven Development", "Test Cases"],
+    location: "Mumbai, India - Remote"
+  },
+  {
+    id: "e14",
+    title: "Content Quality Control",
+    company: "KUKU FM",
+    status : "Current",
+    period: "Feb 2026 — Present",
+    duration: "2 months",
+    opening:
+      "Ensured the quality and consistency of localized audiovisual content, including scripts, dubbing, and subtitles, by performing comprehensive linguistic, performance, and technical quality checks. Key responsibilities:",
+    bullets: [
+      "Performed linguistic QA to ensure translation accuracy, tone consistency, and natural dialogue localization.",
+      "Reviewed dubbing quality, including lip sync alignment, pronunciation, accent accuracy, and emotional delivery.",
+      "Verified terminology and proper noun consistency across scripts and subtitles.",
+      "Conducted audio quality checks to ensure clear dialogue, balanced mixing, and absence of technical issues.",
+      "Reviewed subtitle (SRT) files for accurate timing, proper formatting, and linguistic quality.",
+      "Documented issues and collaborated with the team to ensure high-quality, platform-ready content.",
+    ],
+    ending:
+      "Supporting the production pipeline by maintaining high standards of quality and consistency across localized media content.",
+    stack: ["Slack", "Google Sheets", "Google Docs", "Google Drive"],
+    skills: ["Linguistic QC", "Translation Accuracy", "Content Quality Assurance", "Localization Review", "Audio Quality Review"],
+    location: "Mumbai, India - Remote"
   },
 ];
 

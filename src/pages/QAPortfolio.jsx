@@ -35,7 +35,8 @@ import {
   Repeat,
   Users,
   ChevronDown,
-  Download
+  Download,
+  Circle
 } from "lucide-react";
 import { max } from "date-fns";
 import { pageDetails } from "@/mock/mock_en";
@@ -869,7 +870,17 @@ export default function QAPortfolio() {
                     <AccordionTrigger className="px-2 text-left text-white hover:no-underline md:px-3">
                       <div className="flex w-full flex-col gap-1 md:flex-row md:items-center md:justify-between">
                         <div>
-                          <div className="text-sm font-semibold">{e.title}</div>
+                          <div className="text-sm font-semibold">
+                            {e.title}
+                            {e.status && (
+                            <Badge
+                              variant="secondary"
+                              className="border border-white/10 bg-green-500 text-white ml-2"
+                            >
+                                <Circle className="h-2 w-2 text-white fill-white" strokeWidth={0}/>
+                              <p className="ml-1">{e.status}</p>
+                            </Badge>)}
+                          </div>
                           <div className="text-xs text-white/80">
                             {e.company} • {e.period} • {e.duration}
                           </div>
