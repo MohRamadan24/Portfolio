@@ -648,7 +648,7 @@ export const experience = [
     company: "NNTRAVEL LLC",
     status: "Current",
     period: "Oct 2025 — Sekarang",
-    duration: "4 months",
+    duration: "9 months",
     opening:
       "Dalam peran saya sebagai QA Specialist, saya memastikan kualitas dan keandalan aplikasi booking hotel di platform mobile maupun sistem admin, termasuk:",
     bullets: [
@@ -670,7 +670,7 @@ export const experience = [
     company: "KUKU FM",
     status: "Current",
     period: "Februari 2026 — Sekarang",
-    duration: "2 months",
+    duration: "4 months",
     opening:
       "Sebagai QA Specialist, saya bertanggung jawab memastikan kualitas dan keandalan aplikasi mobile Android melalui pengujian menyeluruh serta identifikasi berbagai permasalahan sistem. Tanggung jawab utama:",
     bullets: [
@@ -693,7 +693,7 @@ export const experience = [
     company: "KUKU FM",
     status: "Current",
     period: "Februari 2026 — Sekarang",
-    duration: "2 months",
+    duration: "4 months",
     opening:
       "Memastikan kualitas dan konsistensi konten audiovisual yang telah dilokalisasi, termasuk naskah, dubbing, dan subtitle, melalui proses pemeriksaan kualitas dari sisi linguistik, performa, serta teknis. Tanggung jawab utama:",
     bullets: [

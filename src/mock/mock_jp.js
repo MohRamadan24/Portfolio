@@ -656,7 +656,7 @@ export const experience = [
     company: "NNTRAVEL LLC",
     status: "Current",
     period: "2025年10月 — 2026年1月",
-    duration: "4か月",
+    duration: "9か月",
     opening:
       "QAスペシャリストとして、ホテル予約アプリケーションのモバイルおよび管理システム上での品質と信頼性を確保しました：",
     bullets: [
@@ -678,7 +678,7 @@ export const experience = [
   company: "KUKU FM",
   status: "Current",
   period: "2026年2月 — 現在",
-  duration: "2ヶ月",
+  duration: "4か月",
   opening:
     "QAスペシャリストとして、包括的なテストを実施しシステム上の問題を特定することで、Androidモバイルアプリケーションの品質と信頼性を確保する役割を担いました。主な業務内容：",
   bullets: [
@@ -701,7 +701,7 @@ export const experience = [
     company: "KUKU FM",
     status: "Current",
     period: "2026年2月 — 現在",
-    duration: "2ヶ月",
+    duration: "4か月",
     opening:
       "脚本、吹き替え、字幕を含むローカライズされた映像コンテンツの品質と一貫性を確保するため、言語面、パフォーマンス面、技術面における包括的な品質チェックを実施しました。主な業務内容：",
     bullets: [
