@@ -678,7 +678,7 @@ export const experience = [
   company: "KUKU FM",
   status: "Current",
   period: "2026年2月 — 現在",
-  duration: "4か月",
+  duration: "5か月",
   opening:
     "QAスペシャリストとして、包括的なテストを実施しシステム上の問題を特定することで、Androidモバイルアプリケーションの品質と信頼性を確保する役割を担いました。主な業務内容：",
   bullets: [

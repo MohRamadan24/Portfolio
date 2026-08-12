@@ -670,7 +670,7 @@ export const experience = [
     company: "KUKU FM",
     status: "Current",
     period: "Februari 2026 — Sekarang",
-    duration: "4 months",
+    duration: "5 months",
     opening:
       "Sebagai QA Specialist, saya bertanggung jawab memastikan kualitas dan keandalan aplikasi mobile Android melalui pengujian menyeluruh serta identifikasi berbagai permasalahan sistem. Tanggung jawab utama:",
     bullets: [

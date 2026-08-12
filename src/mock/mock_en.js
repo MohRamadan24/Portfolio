@@ -669,7 +669,7 @@ export const experience = [
     company: "KUKU FM",
     status : "Current",
     period: "Feb 2026 — Present",
-    duration: "4 months",
+    duration: "5 months",
     opening:
       "As a QA Specialist, I was responsible for ensuring the quality and reliability of the Android mobile application by performing comprehensive testing and identifying system issues. Key responsibilities:",
     bullets: [
