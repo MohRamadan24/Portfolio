@@ -7,7 +7,7 @@ import { number } from "zod";
 export const pageDetails = {
   headerTitle: "Portfolio",
   viewWorkButton: "View Work",
-  profileBadge: "Available for QA gigs",
+  profileBadge: "Available for QA gig",
   coreFocusLabel: "CORE FOCUS",
   servicesEyebrow: "WHAT I DO",
   servicesTitle: "Building reliable digital products",
