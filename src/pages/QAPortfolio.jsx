@@ -39,7 +39,9 @@ import {
   Circle
 } from "lucide-react";
 import { max } from "date-fns";
-import { pageDetails } from "@/mock/mock_en";
+// === CLAUDE CODE START === (removed direct mock import — now uses context data)
+// Previously: import { pageDetails } from "@/mock/mock_en";
+// === CLAUDE CODE END ===
 
 function LanguageDropdown() {
   const { data, lang, setLang } = useLanguage()
@@ -146,7 +148,9 @@ function SectionHeading({ eyebrow, title, description, right }) {
 function Header() {
 
   const { data, lang, setLang } = useLanguage()
-  const { profile } = data
+  // === CLAUDE CODE START === (added pageDetails destructure — was using stale direct import before)
+  const { profile, pageDetails } = data
+  // === CLAUDE CODE END ===
 
   const nav = [
     { id: "profile", label: "Profile" },
@@ -241,7 +245,9 @@ function truncate(reviewBody, maxReviewBodyLength = 250) {
   return trimmed.slice(0, trimmed.lastIndexOf(" ")) + "...";
 }
 
-function ReviewCard({ review }) {
+// === CLAUDE CODE START === (added pageDetails prop — was using stale direct import before)
+function ReviewCard({ review, pageDetails }) {
+// === CLAUDE CODE END ===
   const topTags = (review.tags || []).slice(0, 5);
 
   const avatarFallback = useMemo(() => {
@@ -398,9 +404,9 @@ function ReviewCard({ review }) {
 
 export default function QAPortfolio() {
 
-  // const { data } = useLanguage()
-  const { data, lang, setLang } = useLanguage()
-
+  // === CLAUDE CODE START === (added loading/error from CMS context)
+  const { data, lang, setLang, loading, error } = useLanguage()
+  // === CLAUDE CODE END ===
 
   const {
     profile,
@@ -510,6 +516,19 @@ export default function QAPortfolio() {
     }
   };
 
+
+  // === CLAUDE CODE START === (loading state while fetching from CMS)
+  if (loading) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-[#07080c]">
+        <div className="flex flex-col items-center gap-4">
+          <div className="h-8 w-8 animate-spin rounded-full border-2 border-white/20 border-t-[#b98cff]" />
+          <p className="text-sm text-white/40">Loading...</p>
+        </div>
+      </div>
+    );
+  }
+  // === CLAUDE CODE END ===
 
   return (
     <div id="top" className="min-h-screen bg-[#07080c]">
@@ -781,7 +800,7 @@ export default function QAPortfolio() {
       
           <div className="grid gap-4 md:grid-cols-2">
             {[...reviews].reverse().map((r) => (
-              <ReviewCard key={r.id} review={r} />
+              <ReviewCard key={r.id} review={r} pageDetails={pageDetails} />
             ))}
           </div>
         </section>

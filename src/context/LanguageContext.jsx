@@ -1,30 +1,43 @@
-import { createContext, useContext, useMemo, useState } from "react";
+// === CLAUDE CODE START === (replaced static mock imports with async API fetch)
+import { createContext, useContext, useState, useEffect } from "react";
+import { fetchAllData } from "@/api/cms";
 
 import * as EN from "@/mock/mock_en";
-import * as ID from "@/mock/mock_id";
-import * as JP from "@/mock/mock_jp";
 
 const LanguageContext = createContext(null);
 
 export function LanguageProvider({ children }) {
   const [lang, setLang] = useState("EN");
+  const [data, setData] = useState(EN);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  const data = useMemo(() => {
-    switch (lang) {
-      case "ID":
-        return ID;
-      case "JP":
-        return JP;
-      case "EN":
-      default:
-        return EN;
-    }
+  useEffect(() => {
+    let cancelled = false;
+    setLoading(true);
+    fetchAllData(lang)
+      .then((result) => {
+        if (!cancelled) {
+          setData(result);
+          setError(null);
+        }
+      })
+      .catch((err) => {
+        if (!cancelled) {
+          console.error("CMS fetch failed, using fallback:", err);
+          setError(err);
+        }
+      })
+      .finally(() => {
+        if (!cancelled) setLoading(false);
+      });
+    return () => {
+      cancelled = true;
+    };
   }, [lang]);
 
-
-
   return (
-    <LanguageContext.Provider value={{ lang, setLang, data }}>
+    <LanguageContext.Provider value={{ lang, setLang, data, loading, error }}>
       {children}
     </LanguageContext.Provider>
   );
@@ -33,3 +46,4 @@ export function LanguageProvider({ children }) {
 export function useLanguage() {
   return useContext(LanguageContext);
 }
+// === CLAUDE CODE END ===
