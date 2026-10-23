@@ -33,7 +33,7 @@ function transformProfile(raw) {
     name: raw.name,
     headline: raw.headline,
     location: raw.location,
-    photoUrl: raw.photoUrl,
+    photoUrl: raw.photo?.url ? `${BASE}${raw.photo.url}` : null,
     summary: raw.summary,
     quickStats: raw.quickStats
       ? raw.quickStats.map((s) => ({ label: s.label, value: s.value }))
@@ -98,7 +98,7 @@ function transformPortfolioItems(docs) {
     title: doc.title,
     subtitle: doc.subtitle,
     href: doc.href,
-    thumbnail: doc.thumbnail,
+    thumbnail: doc.thumbnail?.url ? `${BASE}${doc.thumbnail.url}` : null,
     tags: flattenTextArray(doc.tags),
   }));
 }
